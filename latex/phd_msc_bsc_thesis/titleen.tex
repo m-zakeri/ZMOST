@@ -1,0 +1,43 @@
+% !TeX root=_main_.tex
+% Title English
+% Latin abtrsaction and other info
+% By: Morteza ZAKERI
+% در این فایل، عنوان پایان‌نامه، مشخصات خود و چکیده پایان‌نامه را به انگلیسی، وارد کنید.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\baselineskip=1.0cm
+
+\begin{latin}
+	
+	\latinuniversity{Iran University of Science and Technology}
+	\latinfaculty{School of Computer Engineering}
+	\latinsubject{Computer Engineering}
+	\latinfield{Software}
+	\hypertarget{latintitle}{}
+	\latintitle{Automatic Test Data Generation in\\ \vspace{5mm} File Format Fuzzers}
+	\firstlatinsupervisor{Dr. Saeed Parsa}
+	%\secondlatinsupervisor{Second Supervisor}
+	%\firstlatinadvisor{First Advisor}
+	%\secondlatinadvisor{Second Advisor}
+	\latinname{Morteza}
+	\latinsurname{Zakeri Nasrabadi}
+	\latinthesisdate{September 2018}
+	
+	\latinkeywords{Fuzz Testing, Test Data, Code Coverage, Deep Learning, Recurrent Neural Network.}
+	\en-abstract{
+		%% Edition 1
+		%Fuzz testing is a dynamic software testing technique. In this technique with repeated generation and injection of malformed test data to software under test (SUT), we are looking for the possible errors and vulnerabilities. To achieve this goal, the fuzz testing requires a variety of test data. The most important problem is the complexity of the input structure of programs that accept the file as an input. Studies show that many of the generated test data in these cases follow the same and superficial paths because they are rejected by the parser of target program within the initial stages of parsing due to the fact that they are not well-formed. Using the grammar to generate data will lead to increased code coverage, but writing a grammar for a file structure should be done manually, which is a time consuming, costly and error-prone process. In this thesis, we proposed an automated method for grammar-based test data generation. For this purpose, we will use neural language models (NLMs) that are constructed using recurrent neural networks (RNNs). Proposed models with the help of deep learning techniques are able to learn the statistical structure of complex files and then generate new test data. Fuzzing the generated data is also done by algorithms that use these models. We use our proposed method to generated test data, and then fuzz testing of MuPDF complex software which takes PDF files as input. Our experiments show that the data produced by this method leads to an increase in the code executed by the SUT and improves its code coverage compared to popular file format fuzzer such as AFL. We also saw that simpler NLMs outperformed more complex model such as encoder-decoder RNN in the case of model accuracy, perplexity and finally code coverage.
+		%
+		%% Edition 2	
+		%Fuzz testing is a dynamic software testing technique. In this technique with repeated generation and injection of malformed test data to the software under test (SUT), we are looking for the possible errors and vulnerabilities. To achieve this goal, fuzz testing requires varieties of test data. The most important challenge is to handle the complexity of the file structures as a program input. Surveys have revealed that many of the generated test data in these cases follow restricted numbers and superficial paths, because of being rejected by the parser of the target program in the initial stages of parsing. Using the grammatical structure of input files to generate test data lead to increase code coverage. However, often, the grammar extraction is performed manually, which is a time consuming, costly and error-prone task. In this thesis, we proposed an automated method for grammar-based test data generation. To this aim, we apply neural language models (NLMs) that are constructed by recurrent neural networks (RNNs). Proposed models with the help of deep learning techniques are able to learn the statistical structure of complex files and then generate new test data. Fuzzing the generated data is also done by algorithms that use these models. We use our proposed method to generated test data, and then fuzz testing of MuPDF complex software which takes PDF files as input. Our experiments demonstrate that the data produced by this method leads to an increase in the code coverage compared to popular file format fuzzer such as AFL. Our surveys indicate an improvement of accuracy, perplexity, and code coverage of the simpler NLMs in comparison with more complicated models such as encoder-decoder models.
+		%
+		%% Edition 3
+		%{\LARGE F}uzz testing is a dynamic software testing technique. In this technique with repeated generation and injection of malformed test data to the software under test (SUT), we are looking for the possible faults and vulnerabilities. To this goal, fuzz testing requires varieties of test data. The most critical challenge is to handle the complexity of the file structures as program input. Surveys have revealed that many of the generated test data in these cases follow restricted numbers and superficial paths, because of being rejected by the parser of the target program in the initial stages of parsing. Using the grammatical structure of input files to generate test data lead to increase code coverage. However, often, the grammar extraction is performed manually, which is a time consuming, costly and error-prone task. In this thesis, we proposed an automated method for grammar-based test data generation. To this aim, we apply neural language models (NLMs) that are constructed by recurrent neural networks (RNNs). The proposed models with the help of deep learning techniques can learn the statistical structure of complex files and then generate new test data. Fuzzing the generated data is also done by algorithms that use these models. We use our proposed method to generate test data, and then fuzz testing of MuPDF complicated software which takes portable document format (PDF) files as input. Our experiments demonstrate that the data produced by this method leads to an increase in the code coverage compared to state of the art file format fuzzer such as American fuzzy lop (AFL). Our experiments indicate an improvement of accuracy, perplexity, and code coverage of the simpler NLMs in comparison with more complicated models such as encoder-decoder models.
+	\lettrine[lines=2, nindent=.25em, slope=2pt, findent=2pt]{\textbf{F}}{UZZ} testing (Fuzzing) is a dynamic software testing technique. In this technique with repeated generation and injection of malformed test data to the software under test (SUT), we are looking for the possible faults and vulnerabilities. To this goal, fuzz testing requires varieties of test data. The most critical challenge is to handle the complexity of the file structures as program input. Surveys have revealed that many of the generated test data in these cases follow restricted numbers and superficial paths, because of being rejected by the parser of SUT in the initial stages of parsing. Using the grammatical structure of input files to generate test data lead to increase code coverage. However, often, the grammar extraction is performed manually, which is a time consuming, costly and error-prone task. In this thesis, we proposed an automated method for hybrid test data generation. To this aim, we apply neural language models (NLMs) that are constructed by recurrent neural networks (RNNs). The proposed models by using deep learning techniques can learn the statistical structure of complex files and then generate new textual test data, based on the grammar, and binary data, based on mutations. Fuzzing the generated data is done by two newly introduced algorithms, called neural fuzz algorithms that use these models. 
+		We use our proposed method to generate test data, and then fuzz testing of MuPDF complicated software which takes portable document format (PDF) files as input. 
+		To train our generative models, we gathered a large corpus of PDF files.
+		Our experiments demonstrate that the data generated by this method leads to an increase in the code coverage, more than 7\%, compared to state of the art file format fuzzers such as American fuzzy lop (AFL). Experiments also indicate a better learning accuracy of simpler NLMS in comparison with the more complicated encoder-decoder model and confirm that our proposed models can outperform the encoder-decoder model in code coverage when fuzzing the SUT.
+	}
+\latinfirstPage
+
+\end{latin}

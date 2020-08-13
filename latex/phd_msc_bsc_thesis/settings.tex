@@ -1,0 +1,486 @@
+
+% در این فایل، دستورها و تنظیمات مورد نیاز، آورده شده است.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% دستوراتی که پوشه پیش‌فرض زیرفایل‌های tex را مشخص می‌کند.
+%\makeatletter
+%\def\input@path{{./tex/}}
+%\makeatother
+% در ورژن جدید زی‌پرشین برای تایپ متن‌های ریاضی، این سه بسته، حتماً باید فراخوانی شود
+%\usepackage{amsthm, amssymb, amsmath}
+\RequirePackage{amsthm, amssymb, amsmath, amsfonts}
+% بسته‌ای برای تنطیم حاشیه‌های بالا، پایین، چپ و راست صفحه
+\usepackage[top=40mm, bottom=40mm, left=25mm, right=35mm]{geometry}
+%\usepackage{color}
+\usepackage[x11names, usenames, dvipsnames, svgnames, table]{xcolor}
+\usepackage{enumerate}
+%\usepackage{bm}
+\usepackage{verbatim}
+%\usepackage{lscape}
+\usepackage{pdflscape}
+%\usepackage{rotating}
+\usepackage{lettrine}
+\renewcommand{\LettrineTextFont}{}
+\usepackage{titlesec}
+% بسته‌‌ای برای ظاهر شدن شکل‌ها و تعیین آدرس تصاویر
+\usepackage[final]{graphicx}
+\graphicspath{{./figs/}}
+\usepackage{caption}
+%\usepackage{subcaption}
+%\usepackage{subfig}
+
+\usepackage{float}
+\usepackage{xparse}
+\usepackage{listing}
+\usepackage[final]{listings}
+\lstset{inputpath=./codes/}
+
+
+
+\usepackage{soulutf8}
+
+% بسته‌ای برای رسم کادر
+\usepackage{framed} 
+% بسته‌‌ای برای چاپ شدن خودکار تعداد صفحات در صفحه «معرفی پایان‌نامه»
+\usepackage{lastpage}
+\usepackage{cite}	% Add by Morteza %
+
+% بسته‌ٔ لازم برای: ۱. تغییر شماره‌گذاری صفحات پیوست. ۲. تصحیح باگ آدرس وب حاوی '%' در مراجع
+\usepackage{etoolbox}
+\usepackage{comment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% دستورات وابسته به استیل مراجع:
+%% اگر از استیل‌های natbib (plainnat-fa، asa-fa، chicago-fa) استفاده می‌کنید، خط زیر را فعال و بعدی‌اش را غیرفعال کنید.
+%\usepackage{natbib}
+%\newcommand{\citelatin}[1]{\cite{#1}\LTRfootnote{\citeauthor*{#1}}}
+%\newcommand{\citeplatin}[1]{\citep{#1}\LTRfootnote{\citeauthor*{#1}}}
+%% اگر از سایر استیل‌ها استفاده می‌کنید، خط بالا را غیرفعال و خط‌های زیر را فعال کنید.
+\let\citep\cite
+\let\citelatin\cite
+\let\citeplatin\cite
+%%%%%%%%%%%%
+%\usepackage[nostamp]{draftwatermark}
+% بررسی حالت پیش نویس
+\usepackage{ifdraft}
+\ifdraft
+{%
+% بسته‌ٔ ایجاد لینک‌های رنگی با امکان جهش
+	\usepackage[unicode=true,pagebackref=true,colorlinks,linkcolor=blue,citecolor=red,bookmarks=true, final]{hyperref}
+	%\usepackage{todonotes}
+	%\usepackage[firstpage]{draftwatermark}
+	\usepackage{draftwatermark}
+	\SetWatermarkText{\ \ \ پیش‌نویس}
+	\SetWatermarkScale{1.2}
+}
+{
+	% اضافه کردن امکان ایجاد لینک به صفحه به جای عنوان در فهرست‌ها
+	\usepackage[unicode=true, pagebackref=false, colorlinks, linkcolor=Blue, citecolor=LimeGreen, urlcolor=FireBrick, bookmarks=true, linktocpage, breaklinks]{hyperref}
+	%\usepackage[disable]{todonotes} % final without TODOs
+	%\usepackage[firstpage]{draftwatermark}
+	%\usepackage{draftwatermark}
+	%\SetWatermarkColor[RGB]{240, 240, 245}
+	%\SetWatermarkLightness{0.9813}
+	%\SetWatermarkText{مرتـضی ‌ذاکــری}
+	%\SetWatermarkText{\ \ \ پیش‌نویس}
+	%\SetWatermarkScale{0.65}
+}
+
+
+\usepackage[obeyDraft]{todonotes}
+\setlength{\marginparwidth}{2cm}
+
+% تعیین مشخصات فایل PDF
+\hypersetup{
+	pdftitle={Automatic software refactoring},
+	pdfauthor={Morteza ZAKERI},
+	pdfsubject={Ph.D. Proposal},
+	pdfkeywords={keywords},
+    pdfdirection={R2L}
+}
+
+
+%%%%%%%%%%%%
+%%% تصحیح باگ: اگر در مراجع، آدرس وب حاوی '%' بوده و pagebackref فعال باشد، دستورات زیر باید بیایند:
+%% برای استیل‌های natbib مثل plainnat-fa، asa-fa، chicago-fa
+\makeatletter
+\let\ORIG@BR@@lbibitem\BR@@lbibitem
+\apptocmd\ORIG@BR@@lbibitem{\endgroup}{}{}
+\def\BR@@lbibitem{\begingroup\catcode`\%=12 \ORIG@BR@@lbibitem}
+\makeatother
+%% برای سایر استیل‌ها
+\makeatletter
+\let\ORIG@BR@@bibitem\BR@@bibitem
+\apptocmd\ORIG@BR@@bibitem{\endgroup}{}{}
+\def\BR@@bibitem{\begingroup\catcode`\%=12 \ORIG@BR@@bibitem}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+% بسته‌ و دستوراتی برای ایجاد لینک‌های رنگی با امکان جهش
+%\usepackage[pagebackref=false,colorlinks,linkcolor=blue,citecolor=purple]{hyperref}
+% چنانچه قصد پرینت گرفتن نوشته خود را دارید، خط بالا را غیرفعال و  از دستور زیر استفاده کنید چون در صورت استفاده از دستور زیر‌‌، 
+% لینک‌ها به رنگ سیاه ظاهر خواهند شد که برای پرینت گرفتن، مناسب‌تر است
+%\usepackage[pagebackref=false]{hyperref}
+% بسته‌ لازم برای تنظیم سربرگ‌ها
+\usepackage{fancyhdr}
+\usepackage{setspace}
+% بسته‌های لازم برای نوشتن الگوریتم
+\usepackage{algorithm}
+\usepackage{algorithmic}
+% Add by Morteza %
+%\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+% بسته‌های لازم برای رسم بهتر جداول
+\usepackage{tabulary}
+\usepackage{tabularx}
+%% Add by Morteza
+\usepackage{multirow}
+\usepackage{fourier} 
+\usepackage{array}
+\usepackage{makecell}  % I use this %
+\usepackage{booktabs}
+
+%%
+% بسته‌های لازم برای رسم تنظیم بهتر شکل‌ها و زیرشکل‌ها
+\usepackage[export]{adjustbox}
+%\usepackage{subfigure}
+
+%\usepackage[subfigure]{tocloft}
+\usepackage{tocloft}
+%\usepackage{subfig}
+%\usepackage{caption}
+%\usepackage{subcaption}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% بسته‌ای برای رسم نمودارها و نیز صفحه مالکیت اثر
+\usepackage{tikz}
+% بسته‌ای برای ظاهر شدن «مراجع» و «نمایه» در فهرست مطالب
+\usepackage[nottoc]{tocbibind}
+% دستورات مربوط به ایجاد نمایه
+\usepackage{makeidx}
+\makeindex
+%%% بسته ایجاد واژه‌نامه با xindy
+\usepackage[xindy,acronym,nonumberlist=true]{glossaries}
+
+% بسته زیر باگ ناشی از فراخوانی بسته‌های زیاد را برطرف می‌کند.
+\usepackage{morewrites}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% فراخوانی بسته زی‌پرشین و تعریف قلم فارسی و انگلیسی
+% قلم فارسی بازنویسی و قابل حمل شده است. امکان استفاده از چندین فونت فارسی مختلف در این قسمت فراهم شده است. برای استفاده نیازی به نصب بودن فونت ها روی رایانه خود ندارید.
+
+%\usepackage[extrafootnotefeatures]{xepersian}
+\usepackage{xepersian}
+
+\settextfont[Path={./font/Niloofar/}, BoldFont={XBNiloofarBd.ttf}, ItalicFont={XBNiloofarIt.ttf}, BoldItalicFont={XBNiloofarBdIt.ttf}, Scale=1.0]{XBNiloofar.ttf}
+
+\setlatintextfont[Scale=0.90]{Times New Roman}
+% چنانچه می‌خواهید اعداد در فرمول‌ها، انگلیسی باشد، خط زیر را غیرفعال کنید
+\setdigitfont[Path={./font/Zar/}, BoldFont={XBZarBd.ttf}, ItalicFont={XBZarIt.ttf}, BoldItalicFont={XBZarBdIt.ttf}, Scale=1.0]{XBZar.ttf}
+
+% اگر می‌خواهید که اعداد با فونت یکان نمایش داده شوند خط بالا را غیر فعال کرده و خط زیر را فعال کنید.
+
+%\setdigitfont[Path={./font/Yekan/}, BoldFont={XMYekanBd.ttf}, ItalicFont={XMYekanIt.ttf}, BoldItalicFont={XMYekanBdIt.ttf}, Scale=1.0]{XMYekan.ttf}%{Persian Modern}
+
+% تعریف قلم‌های فارسی و انگلیسی برای استفاده در بعضی از قسمت‌های متن
+\defpersianfont\niloofar[Path={./font/Niloofar/}, BoldFont={XBNiloofarBd.ttf}, ItalicFont={XBNiloofarIt.ttf}, BoldItalicFont={XBNiloofarBdIt.ttf}, Scale=1.0]{XBNiloofar.ttf}
+
+\defpersianfont\zar[Path={./font/Zar/}, BoldFont={XBZarBd.ttf}, ItalicFont={XBZarIt.ttf}, BoldItalicFont={XBZarBdIt.ttf}, Scale=1.0]{XBZar.ttf}
+
+\defpersianfont\yagut[Path={./font/Yagut/}, BoldFont={XBYagutBd.ttf}, ItalicFont={XBYagutIt.ttf}, BoldItalicFont={XBYagutBdIt.ttf}, Scale=1.0]{XBYagut.ttf}
+
+\defpersianfont\titlefont[Path={./font/Titre/}, BoldFont={XBTitreShadow.ttf}, ItalicFont={XBTitreIt.ttf}, BoldItalicFont={XBTitreShadowIt.ttf}, Scale=1.0]{XBTitre.ttf}
+
+\defpersianfont\iranic[Path={./font/Zar/XBZarOblique/}, BoldFont={XBZarObliqueBd.ttf}, Scale=1.10]{XBZarOblique.ttf}%Italic}%
+
+\defpersianfont\nastaliq[Path={./font/IranNastaliq/}, Scale=1.50]{IranNastaliq.ttf}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{sectsty}
+%\titleformat{\chapter}[display]{\titlefont\Huge}{\chaptertitlename\ \tartibi{chapter}}{1em}{}
+%% Coloring chapter{} and sections{}
+%% Use the package sectsty to do change the headings, and xcolor to get the colour definitions.
+
+%\chapterfont{\raggedleft}
+\chapterfont{\color{DodgerBlue4}  \Huge \raggedleft}  % sets colour of chapters
+\sectionfont{\color{DeepSkyBlue4}}  % sets colour of sections
+\subsectionfont{\color{DeepSkyBlue3}}  % sets colour of sections
+
+\captionsetup[figure]{labelfont={color=Brown4, bf}} %DarkStateGray
+\captionsetup[table]{labelfont={color=Brown4, bf}} %DarkStateGray
+
+% بسته زیر و متعاقباً دستورات ادامه آن، برای برای ریست کردن شماره پانویس‌ها در هر صفحه قرار داده شده است (به درخواست دکتر محمد عبداللهی ازگمی)
+
+%\usepackage[perpage]{footmisc}
+\usepackage{zref-perpage}
+\zmakeperpage{footnote}
+
+\usepackage{bidi}
+\makeatletter
+\@bidi@removefromreset{footnote}{chapter}
+\makeatother
+
+
+% راستچین شدن todonotes
+\presetkeys{todonotes}{align=right, textdirection=righttoleft}{}
+\makeatletter
+\providecommand\@dotsep{5}
+\def\listtodoname{فهرست کارهای باقیمانده}
+\def\listoftodos{\noindent{\Large\vspace{10mm}\textbf{\listtodoname}}\@starttoc{tdo}}
+\renewcommand{\@todonotes@MissingFigureText}{شکل}
+\renewcommand{\@todonotes@MissingFigureUp}{شکل}
+\renewcommand{\@todonotes@MissingFigureDown}{جاافتاده}
+\makeatother
+% دستوری برای حذف کلمه «چکیده»
+\renewcommand{\abstractname}{}
+% دستوری برای حذف کلمه «abstract»
+%\renewcommand{\latinabstract}{}
+% دستوری برای تغییر نام کلمه «اثبات» به «برهان»
+\renewcommand\proofname{\textbf{برهان}}
+% دستوری برای تغییر نام کلمه «کتاب‌نامه» به «مراجع»
+\renewcommand{\bibname}{مراجع}
+% دستوری برای تعریف واژه‌نامه انگلیسی به فارسی
+\newcommand\persiangloss[2]{#1\dotfill\lr{#2}\\}
+% دستوری برای تعریف واژه‌نامه فارسی به انگلیسی 
+\newcommand\englishgloss[2]{#2\dotfill\lr{#1}\\}
+% تعریف دستور جدید «\پ» برای خلاصه‌نویسی جهت نوشتن عبارت «پروژه/پایان‌نامه/رساله»
+\newcommand{\پ}{پروژه/پایان‌نامه/رساله}
+
+%\newcommand\BackSlash{\char`\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\SepMark{-}
+
+
+% تعریف و نحوه ظاهر شدن عنوان قضیه‌ها، تعریف‌ها، مثال‌ها و ...
+\theoremstyle{definition}
+\newtheorem{definition}{تعریف}[section]
+\theoremstyle{theorem}
+\newtheorem{theorem}[definition]{قضیه}
+\newtheorem{lemma}[definition]{لم}
+\newtheorem{proposition}[definition]{گزاره}
+\newtheorem{corollary}[definition]{نتیجه}
+\newtheorem{remark}[definition]{ملاحظه}
+\theoremstyle{definition}
+\newtheorem{example}[definition]{مثال}
+
+%\renewcommand{\theequation}{\thechapter-\arabic{equation}}
+%\def\bibname{مراجع}
+\numberwithin{algorithm}{chapter}
+\def\listalgorithmname{فهرست الگوریتم‌ها}
+\def\listfigurename{فهرست شکل‌ها}
+\def\listtablename{فهرست جدول‌ها}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% دستورهایی برای سفارشی کردن سربرگ صفحات
+% \newcommand{\SetHeader}{
+% \csname@twosidetrue\endcsname
+% \pagestyle{fancy}
+% \fancyhf{} 
+% \fancyhead[OL,EL]{\thepage}
+% \fancyhead[OR]{\small\rightmark}
+% \fancyhead[ER]{\small\leftmark}
+% \renewcommand{\chaptermark}[1]{%
+% \markboth{\thechapter-\ #1}{}}
+% }
+%%%%%%%%%%%%
+%\def\MATtextbaseline{1.5}
+%\renewcommand{\baselinestretch}{\MATtextbaseline}
+%\fancyhead[LE,RO]{\slshape \rightmark}
+%\fancyhead[LO,RE]{\slshape \leftmark}
+%\fancyfoot[C]{\thepage}
+\doublespacing
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% دستوراتی برای اضافه کردن کلمه «فصل» در فهرست مطالب
+
+\newlength\mylenprt
+\newlength\mylenchp
+\newlength\mylenapp
+
+\renewcommand\cftpartpresnum{\partname~}
+\renewcommand\cftchappresnum{\chaptername~}
+\renewcommand\cftchapaftersnum{:}
+
+\settowidth\mylenprt{\cftpartfont\cftpartpresnum\cftpartaftersnum}
+\settowidth\mylenchp{\cftchapfont\cftchappresnum\cftchapaftersnum}
+\settowidth\mylenapp{\cftchapfont\appendixname~\cftchapaftersnum}
+\addtolength\mylenprt{\cftpartnumwidth}
+\addtolength\mylenchp{\cftchapnumwidth}
+\addtolength\mylenapp{\cftchapnumwidth}
+
+\setlength\cftpartnumwidth{\mylenprt}
+\setlength\cftchapnumwidth{\mylenchp}	
+
+\makeatletter
+{\def\thebibliography#1{\chapter*{\refname\@mkboth
+   {\uppercase{\refname}}{\uppercase{\refname}}}\list
+   {[\arabic{enumi}]}{\settowidth\labelwidth{[#1]}
+   \rightmargin\labelwidth
+   \advance\rightmargin\labelsep
+   \advance\rightmargin\bibindent
+   \itemindent -\bibindent
+   \listparindent \itemindent
+   \parsep \z@
+   \usecounter{enumi}}
+   \def\newblock{}
+   \sloppy
+   \sfcode`\.=1000\relax}}
+
+
+%اگر مایلید در شماره گذاری حرفی و ابجد به جای آ از الف استفاده شود دستورات زیر را فعال کنید.   
+%\def\@Abjad#1{%
+%  \ifcase#1\or الف\or ب\or ج\or د%
+%           \or هـ\or و\or ز\or ح\or ط%
+%           \or ی\or ک\or ل\or م\or ن%
+%           \or س\or ع\or ف\or ص%
+%           \or ق\or ر\or ش\or ت\or ث%
+%            \or خ\or ذ\or ض\or ظ\or غ%
+%            \else\@ctrerr\fi}
+%
+% \def\abj@num@i#1{%
+%   \ifcase#1\or الف\or ب\or ج\or د%
+%            \or هـ‍\or و\or ز\or ح\or ط\fi
+
+%   \ifnum#1=\z@\abjad@zero\fi}   
+%  
+%   \def\@harfi#1{\ifcase#1\or الف\or ب\or پ\or ت\or ث\or
+
+% ج\or چ\or ح\or خ\or د\or ذ\or ر\or ز\or ژ\or س\or ش\or ص\or ض\or ط\or ظ\or ع\or غ\or
+
+% ف\or ق\or ک\or گ\or ل\or م\or ن\or و\or ه\or ی\else\@ctrerr\fi}
+
+\makeatother
+
+
+%%%%%%%%%%
+% Packages add by Morteza Zakeri to support code snips M.Sc. Thesis 13970415
+
+
+% بسته‌های مورد نیاز برای نوشتن کدها، رنگ‌آمیزی آنها و تعیین پوشهٔ کدها
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.2,0.2,0.2}
+\definecolor{mymauve}{rgb}{0.58,0,0.82} 
+
+%\ProvidesFile{listings-xepersian.def}[2014/07/17 v0.3 bilingual captions for listings package]
+%\def\lstlistingname{\if@RTL else\ Listing\fi}
+%\def\lstlistlistingname{\if@RTL  else\  Listings\fi}
+
+\lstdefinestyle{myStyle}{ 
+	backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+	basicstyle=\ttfamily, % whole listing /w verbatim font
+	breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+	breaklines=true,                 % sets automatic line breaking
+	captionpos=b,                    % sets the caption-position to bottom
+	commentstyle=\color{mygreen},    % comment style
+	deletekeywords={...},            % if you want to delete keywords from the given language
+	escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+	extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+	frame=tb,	                     % adds a frame around the code
+	lineskip=.095cm,                   % space between code lines
+	keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+	keywordstyle=\color{blue},       % keyword style
+	language=Octave,                 % the language of the code
+	morekeywords={*,...},            % if you want to add more keywords to the set
+	numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+	numbersep=3pt,                   % how far the line-numbers are from the code
+	numberstyle=\tiny\color{mygray}\lr, % the style that is used for the line-numbers
+	rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+	showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+	showstringspaces=false,          % underline spaces within strings only
+	showtabs=false,                  % show tabs within strings adding particular underscores
+	stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
+	stringstyle=\ttfamily\color{mymauve},     % string literal style
+	tabsize=2,	                     % sets default tabsize to 2 spaces
+	title=\lstname,                  % show the filename of files included with \lstinputlisting; also try caption instead of title
+	captionpos=b,
+	captiondirection=RTL
+}
+
+\lstdefinestyle{myStyle2}{
+	basicstyle=\ttfamily, % whole listing /w verbatim font
+	keywordstyle=\color{blue}\bfseries, % bold black keywords
+	identifierstyle=, % nothing happens
+	commentstyle=\color{LimeGreen}, % green comments
+	stringstyle=\ttfamily\color{red}, % red typewriter font for strings
+	showstringspaces=false % no special string spaces
+	breaklines=true,
+	breakatwhitespace=false,
+	numbers=right, % line number formats
+	numberstyle=\footnotesize\lr,
+	numbersep=-10pt,
+	frame=single,
+	captionpos=b,
+	captiondirection=RTL
+}
+
+\lstset{style=myStyle} % command to set default style
+%\def\listingsfont{\ttfamily}
+\def\lstlistingname{\rl{برنامه}}
+
+
+%\def\lstlistingname{\rl{تکه کد}}
+
+
+% for numbering subsubsections
+%\setcounter{secnumdepth}{3}
+% to include subsubsections in the table of contents
+%\setcounter{tocdepth}{3}
+
+
+%\usepackage{hyperref}
+\usepackage{csquotes}
+\usepackage{epigraph}
+\usepackage{etoolbox}
+\newcommand{\epigraphcolor}{DarkKhaki}
+\makeatletter
+\newlength\epitextskip
+\pretocmd{\@epitext}{\color{NavajoWhite4} \yagut\itshape }{}{} %DimGray
+\makeatother
+%
+\newcommand{\epigraphrulecolor}{DarkKhaki}
+\makeatletter
+\renewcommand{\@epirule}{{\color{\epigraphrulecolor}\rule[.75ex]{\epigraphwidth}{\epigraphrule}}}
+\makeatother
+%
+
+\setlength\epigraphwidth{0.75\linewidth}
+\renewcommand{\epigraphsize}{\small}
+\renewcommand{\epigraphflush}{flushleft}
+\renewcommand{\sourceflush}{flushleft}
+\renewcommand{\textflush}{flushepinormal}
+
+%\usepackage{polyglossia}
+%\usepackage[algo2e,linesnumbered,ruled,vlined]{algorithm2e}
+\usepackage{textgreek}
+\usepackage{booktabs}  % professional-quality tables
+\usepackage{nicefrac}  % compact symbols for 1/2, etc.
+\usepackage{microtype}  % microtypography
+\usepackage[algo2e, ruled, linesnumbered, resetcount]{algorithm2e}
+\def\HiLi{\leavevmode\rlap{\hbox to \hsize{\color{yellow!50}\leaders\hrule height .8\baselineskip depth .5ex\hfill}}}
+
+%\usepackage[printwatermark]{xwatermark}
+\usepackage{watermark}
+%\usepackage{bm}
+\usepackage{subcaption}
+%\usepackage{multicol}
+%\renewcommand\thesubfigure{\harfi{subfigure}}
+\renewcommand{\thesubfigure}{\harfi{subfigure}}
+
+%%%PDF setting
+\usepackage[open, openlevel=1, atend]{bookmark}[2019/10/31]
+\bookmarksetup{color=blue}
+\bookmark[dest=titlefa]{تولید خودکار داده آزمون در فازرهای قالب فایل}
+
+%\bookmark[dest=acknowledgement]{درباره نسخه پیش‌نویس}
+%\bookmark[dest=acknowledgment]{قدردانی}
+\bookmark[dest=abstractfa]{چکیده}
+\bookmark[dest=tableofcontent]{فهرست مطالب}
+
+% end of packages add by Morteza
+%%%%%%%%%
+
+

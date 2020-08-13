@@ -1,0 +1,750 @@
+\ifglsentryexists{ASE}{}%
+{%
+\gls@defglossaryentry{ASE}%
+{%
+name={ASE},%
+sort={ASE},%
+type={acronym},%
+first={\lr {Automate Software Engineering}\glsspace (ASE)},%
+firstplural={\lr {Automate Software Engineering}\acrpluralsuffix \glsspace (ASE\acrpluralsuffix )},%
+text={ASE},%
+plural={ASE\acrpluralsuffix },%
+description={\lr {Automate Software Engineering}},%
+descriptionplural={\lr {Automate Software Engineering}\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\lr {Automate Software Engineering}},%
+longplural={\lr {Automate Software Engineering}s},%
+short={ASE},%
+shortplural={ASEs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{SUT}{}%
+{%
+\gls@defglossaryentry{SUT}%
+{%
+name={SUT},%
+sort={SUT},%
+type={acronym},%
+first={\lr {Software Under Test}\glsspace (SUT)},%
+firstplural={\lr {Software Under Test}\acrpluralsuffix \glsspace (SUT\acrpluralsuffix )},%
+text={SUT},%
+plural={SUT\acrpluralsuffix },%
+description={\lr {Software Under Test}},%
+descriptionplural={\lr {Software Under Test}\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\lr {Software Under Test}},%
+longplural={\lr {Software Under Test}s},%
+short={SUT},%
+shortplural={SUTs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{PDF}{}%
+{%
+\gls@defglossaryentry{PDF}%
+{%
+name={PDF},%
+sort={PDF},%
+type={acronym},%
+first={\lr {Portable Document Format}\glsspace (PDF)},%
+firstplural={\lr {Portable Document Format}\acrpluralsuffix \glsspace (PDF\acrpluralsuffix )},%
+text={PDF},%
+plural={PDF\acrpluralsuffix },%
+description={\lr {Portable Document Format}},%
+descriptionplural={\lr {Portable Document Format}\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\lr {Portable Document Format}},%
+longplural={\lr {Portable Document Format}s},%
+short={PDF},%
+shortplural={PDFs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ISRT}{}%
+{%
+\gls@defglossaryentry{ISRT}%
+{%
+name={ISRT},%
+sort={ISRT},%
+type={acronym},%
+first={\lr {Internet Security Threat Report}\glsspace (ISRT)},%
+firstplural={\lr {Internet Security Threat Report}\acrpluralsuffix \glsspace (ISRT\acrpluralsuffix )},%
+text={ISRT},%
+plural={ISRT\acrpluralsuffix },%
+description={\lr {Internet Security Threat Report}},%
+descriptionplural={\lr {Internet Security Threat Report}\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\lr {Internet Security Threat Report}},%
+longplural={\lr {Internet Security Threat Report}s},%
+short={ISRT},%
+shortplural={ISRTs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{SDL}{}%
+{%
+\gls@defglossaryentry{SDL}%
+{%
+name={SDL},%
+sort={SDL},%
+type={acronym},%
+first={\lr {Security Development Lifecycle}\glsspace (SDL)},%
+firstplural={\lr {Security Development Lifecycle}\acrpluralsuffix \glsspace (SDL\acrpluralsuffix )},%
+text={SDL},%
+plural={SDL\acrpluralsuffix },%
+description={\lr {Security Development Lifecycle}},%
+descriptionplural={\lr {Security Development Lifecycle}\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\lr {Security Development Lifecycle}},%
+longplural={\lr {Security Development Lifecycle}s},%
+short={SDL},%
+shortplural={SDLs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{CFG}{}%
+{%
+\gls@defglossaryentry{CFG}%
+{%
+name={CFG},%
+sort={CFG},%
+type={acronym},%
+first={\lr {Control Flow Graph}\glsspace (CFG)},%
+firstplural={\lr {Control Flow Graph}\acrpluralsuffix \glsspace (CFG\acrpluralsuffix )},%
+text={CFG},%
+plural={CFG\acrpluralsuffix },%
+description={\lr {Control Flow Graph}},%
+descriptionplural={\lr {Control Flow Graph}\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\lr {Control Flow Graph}},%
+longplural={\lr {Control Flow Graph}s},%
+short={CFG},%
+shortplural={CFGs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{DFG}{}%
+{%
+\gls@defglossaryentry{DFG}%
+{%
+name={DFG},%
+sort={DFG},%
+type={acronym},%
+first={\lr {Data Flow Graph}\glsspace (DFG)},%
+firstplural={\lr {Data Flow Graph}\acrpluralsuffix \glsspace (DFG\acrpluralsuffix )},%
+text={DFG},%
+plural={DFG\acrpluralsuffix },%
+description={\lr {Data Flow Graph}},%
+descriptionplural={\lr {Data Flow Graph}\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\lr {Data Flow Graph}},%
+longplural={\lr {Data Flow Graph}s},%
+short={DFG},%
+shortplural={DFGs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{CLI}{}%
+{%
+\gls@defglossaryentry{CLI}%
+{%
+name={CLI},%
+sort={CLI},%
+type={acronym},%
+first={\lr {Command Line Interface}\glsspace (CLI)},%
+firstplural={\lr {Command Line Interface}\acrpluralsuffix \glsspace (CLI\acrpluralsuffix )},%
+text={CLI},%
+plural={CLI\acrpluralsuffix },%
+description={\lr {Command Line Interface}},%
+descriptionplural={\lr {Command Line Interface}\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\lr {Command Line Interface}},%
+longplural={\lr {Command Line Interface}s},%
+short={CLI},%
+shortplural={CLIs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{GUI}{}%
+{%
+\gls@defglossaryentry{GUI}%
+{%
+name={GUI},%
+sort={GUI},%
+type={acronym},%
+first={\lr {Graphical User Interface}\glsspace (GUI)},%
+firstplural={\lr {Graphical User Interface}\acrpluralsuffix \glsspace (GUI\acrpluralsuffix )},%
+text={GUI},%
+plural={GUI\acrpluralsuffix },%
+description={\lr {Graphical User Interface}},%
+descriptionplural={\lr {Graphical User Interface}\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\lr {Graphical User Interface}},%
+longplural={\lr {Graphical User Interface}s},%
+short={GUI},%
+shortplural={GUIs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{CNN}{}%
+{%
+\gls@defglossaryentry{CNN}%
+{%
+name={CNN},%
+sort={CNN},%
+type={acronym},%
+first={\lr {Convolutional Neural Network}\glsspace (CNN)},%
+firstplural={\lr {Convolutional Neural Network}\acrpluralsuffix \glsspace (CNN\acrpluralsuffix )},%
+text={CNN},%
+plural={CNN\acrpluralsuffix },%
+description={\lr {Convolutional Neural Network}},%
+descriptionplural={\lr {Convolutional Neural Network}\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\lr {Convolutional Neural Network}},%
+longplural={\lr {Convolutional Neural Network}s},%
+short={CNN},%
+shortplural={CNNs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{RNN}{}%
+{%
+\gls@defglossaryentry{RNN}%
+{%
+name={RNN},%
+sort={RNN},%
+type={acronym},%
+first={\lr {Recurrent Neural Network}\glsspace (RNN)},%
+firstplural={\lr {Recurrent Neural Network}\acrpluralsuffix \glsspace (RNN\acrpluralsuffix )},%
+text={RNN},%
+plural={RNN\acrpluralsuffix },%
+description={\lr {Recurrent Neural Network}},%
+descriptionplural={\lr {Recurrent Neural Network}\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\lr {Recurrent Neural Network}},%
+longplural={\lr {Recurrent Neural Network}s},%
+short={RNN},%
+shortplural={RNNs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{NLP}{}%
+{%
+\gls@defglossaryentry{NLP}%
+{%
+name={NLP},%
+sort={NLP},%
+type={acronym},%
+first={\lr {Natural Language Processing}\glsspace (NLP)},%
+firstplural={\lr {Natural Language Processing}\acrpluralsuffix \glsspace (NLP\acrpluralsuffix )},%
+text={NLP},%
+plural={NLP\acrpluralsuffix },%
+description={\lr {Natural Language Processing}},%
+descriptionplural={\lr {Natural Language Processing}\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\lr {Natural Language Processing}},%
+longplural={\lr {Natural Language Processing}s},%
+short={NLP},%
+shortplural={NLPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{DAG}{}%
+{%
+\gls@defglossaryentry{DAG}%
+{%
+name={DAG},%
+sort={DAG},%
+type={acronym},%
+first={\lr {Directed Acyclic Graph}\glsspace (DAG)},%
+firstplural={\lr {Directed Acyclic Graph}\acrpluralsuffix \glsspace (DAG\acrpluralsuffix )},%
+text={DAG},%
+plural={DAG\acrpluralsuffix },%
+description={\lr {Directed Acyclic Graph}},%
+descriptionplural={\lr {Directed Acyclic Graph}\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\lr {Directed Acyclic Graph}},%
+longplural={\lr {Directed Acyclic Graph}s},%
+short={DAG},%
+shortplural={DAGs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{BPTT}{}%
+{%
+\gls@defglossaryentry{BPTT}%
+{%
+name={BPTT},%
+sort={BPTT},%
+type={acronym},%
+first={\lr {Back Propagation Through Time}\glsspace (BPTT)},%
+firstplural={\lr {Back Propagation Through Time}\acrpluralsuffix \glsspace (BPTT\acrpluralsuffix )},%
+text={BPTT},%
+plural={BPTT\acrpluralsuffix },%
+description={\lr {Back Propagation Through Time}},%
+descriptionplural={\lr {Back Propagation Through Time}\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\lr {Back Propagation Through Time}},%
+longplural={\lr {Back Propagation Through Time}s},%
+short={BPTT},%
+shortplural={BPTTs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{LSTM}{}%
+{%
+\gls@defglossaryentry{LSTM}%
+{%
+name={LSTM},%
+sort={LSTM},%
+type={acronym},%
+first={\lr {Long-Short Term Memory}\glsspace (LSTM)},%
+firstplural={\lr {Long-Short Term Memory}\acrpluralsuffix \glsspace (LSTM\acrpluralsuffix )},%
+text={LSTM},%
+plural={LSTM\acrpluralsuffix },%
+description={\lr {Long-Short Term Memory}},%
+descriptionplural={\lr {Long-Short Term Memory}\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\lr {Long-Short Term Memory}},%
+longplural={\lr {Long-Short Term Memory}s},%
+short={LSTM},%
+shortplural={LSTMs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{GRU}{}%
+{%
+\gls@defglossaryentry{GRU}%
+{%
+name={GRU},%
+sort={GRU},%
+type={acronym},%
+first={\lr {Gated Recurrent Units}\glsspace (GRU)},%
+firstplural={\lr {Gated Recurrent Units}\acrpluralsuffix \glsspace (GRU\acrpluralsuffix )},%
+text={GRU},%
+plural={GRU\acrpluralsuffix },%
+description={\lr {Gated Recurrent Units}},%
+descriptionplural={\lr {Gated Recurrent Units}\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\lr {Gated Recurrent Units}},%
+longplural={\lr {Gated Recurrent Units}s},%
+short={GRU},%
+shortplural={GRUs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{LM}{}%
+{%
+\gls@defglossaryentry{LM}%
+{%
+name={LM},%
+sort={LM},%
+type={acronym},%
+first={\lr {Language Model}\glsspace (LM)},%
+firstplural={\lr {Language Model}\acrpluralsuffix \glsspace (LM\acrpluralsuffix )},%
+text={LM},%
+plural={LM\acrpluralsuffix },%
+description={\lr {Language Model}},%
+descriptionplural={\lr {Language Model}\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\lr {Language Model}},%
+longplural={\lr {Language Model}s},%
+short={LM},%
+shortplural={LMs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{NLM}{}%
+{%
+\gls@defglossaryentry{NLM}%
+{%
+name={NLM},%
+sort={NLM},%
+type={acronym},%
+first={\lr {Neural Language Model}\glsspace (NLM)},%
+firstplural={\lr {Neural Language Model}\acrpluralsuffix \glsspace (NLM\acrpluralsuffix )},%
+text={NLM},%
+plural={NLM\acrpluralsuffix },%
+description={\lr {Neural Language Model}},%
+descriptionplural={\lr {Neural Language Model}\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\lr {Neural Language Model}},%
+longplural={\lr {Neural Language Model}s},%
+short={NLM},%
+shortplural={NLMs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ASCII}{}%
+{%
+\gls@defglossaryentry{ASCII}%
+{%
+name={ASCII},%
+sort={ASCII},%
+type={acronym},%
+first={\lr {American Standard Code for Information Interchange}\glsspace (ASCII)},%
+firstplural={\lr {American Standard Code for Information Interchange}\acrpluralsuffix \glsspace (ASCII\acrpluralsuffix )},%
+text={ASCII},%
+plural={ASCII\acrpluralsuffix },%
+description={\lr {American Standard Code for Information Interchange}},%
+descriptionplural={\lr {American Standard Code for Information Interchange}\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\lr {American Standard Code for Information Interchange}},%
+longplural={\lr {American Standard Code for Information Interchange}s},%
+short={ASCII},%
+shortplural={ASCIIs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{SOU}{}%
+{%
+\gls@defglossaryentry{SOU}%
+{%
+name={SOU},%
+sort={SOU},%
+type={acronym},%
+first={\lr {Single Object Update}\glsspace (SOU)},%
+firstplural={\lr {Single Object Update}\acrpluralsuffix \glsspace (SOU\acrpluralsuffix )},%
+text={SOU},%
+plural={SOU\acrpluralsuffix },%
+description={\lr {Single Object Update}},%
+descriptionplural={\lr {Single Object Update}\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\lr {Single Object Update}},%
+longplural={\lr {Single Object Update}s},%
+short={SOU},%
+shortplural={SOUs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{MOU}{}%
+{%
+\gls@defglossaryentry{MOU}%
+{%
+name={MOU},%
+sort={MOU},%
+type={acronym},%
+first={\lr {Multiple Objects Update}\glsspace (MOU)},%
+firstplural={\lr {Multiple Objects Update}\acrpluralsuffix \glsspace (MOU\acrpluralsuffix )},%
+text={MOU},%
+plural={MOU\acrpluralsuffix },%
+description={\lr {Multiple Objects Update}},%
+descriptionplural={\lr {Multiple Objects Update}\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\lr {Multiple Objects Update}},%
+longplural={\lr {Multiple Objects Update}s},%
+short={MOU},%
+shortplural={MOUs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{GenerativeAdversarialNetwork}{}%
+{%
+\gls@defglossaryentry{GenerativeAdversarialNetwork}%
+{%
+name={GAN},%
+sort={GAN},%
+type={acronym},%
+first={\lr {Generative Adversarial Network}\glsspace (GAN)},%
+firstplural={\lr {Generative Adversarial Network}\acrpluralsuffix \glsspace (GAN\acrpluralsuffix )},%
+text={GAN},%
+plural={GAN\acrpluralsuffix },%
+description={\lr {Generative Adversarial Network}},%
+descriptionplural={\lr {Generative Adversarial Network}\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\lr {Generative Adversarial Network}},%
+longplural={\lr {Generative Adversarial Network}s},%
+short={GAN},%
+shortplural={GANs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{CAN}{}%
+{%
+\gls@defglossaryentry{CAN}%
+{%
+name={CAN},%
+sort={CAN},%
+type={acronym},%
+first={\lr {Creative Adversarial Networks}\glsspace (CAN)},%
+firstplural={\lr {Creative Adversarial Networks}\acrpluralsuffix \glsspace (CAN\acrpluralsuffix )},%
+text={CAN},%
+plural={CAN\acrpluralsuffix },%
+description={\lr {Creative Adversarial Networks}},%
+descriptionplural={\lr {Creative Adversarial Networks}\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\lr {Creative Adversarial Networks}},%
+longplural={\lr {Creative Adversarial Networks}s},%
+short={CAN},%
+shortplural={CANs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{a}{}%
+{%
+\gls@defglossaryentry{a}%
+{%
+name={$a$},%
+sort={$a$},%
+type={acronym},%
+first={شتاب (m/s$^2$)\glsspace ($a$)},%
+firstplural={شتاب (m/s$^2$)\acrpluralsuffix \glsspace ($a$\acrpluralsuffix )},%
+text={$a$},%
+plural={$a$\acrpluralsuffix },%
+description={شتاب (m/s$^2$)},%
+descriptionplural={شتاب (m/s$^2$)\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={شتاب (m/s$^2$)},%
+longplural={شتاب (m/s$^2$)s},%
+short={$a$},%
+shortplural={$a$s},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{F}{}%
+{%
+\gls@defglossaryentry{F}%
+{%
+name={$F$},%
+sort={$F$},%
+type={acronym},%
+first={نیرو (N)\glsspace ($F$)},%
+firstplural={نیرو (N)\acrpluralsuffix \glsspace ($F$\acrpluralsuffix )},%
+text={$F$},%
+plural={$F$\acrpluralsuffix },%
+description={نیرو (N)},%
+descriptionplural={نیرو (N)\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={نیرو (N)},%
+longplural={نیرو (N)s},%
+short={$F$},%
+shortplural={$F$s},%
+counter={page},%
+parent={},%
+%
+}%
+}%
