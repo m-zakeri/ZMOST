@@ -1,0 +1,22 @@
+\newpage
+\appendix 
+% Adds appendix as chapter to toc
+\addcontentsline{toc}{chapter}{پیوست‌ها}
+% دستورات زیر باید در اولین فایل پیوست باشند. آنها را حذف نکنید!
+\addtocontents{toc}
+{
+	\protect\renewcommand\protect\cftchappresnum{\appendixname~}%
+	\protect\setlength{\cftchapnumwidth}{\mylenapp}
+}%
+
+
+
+
+\chapter{نمودارها}\label{appendix:1}
+\thispagestyle{empty}
+
+\chapter{پیاده‌سازی}
+
+
+
+\chapter{واژه‌نامه}
