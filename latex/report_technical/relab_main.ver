@@ -1,0 +1,14 @@
+\begin {longtable}{@{}|l|l|>{\hsize =\vhAuthorColWidth }X|>{\hsize =\vhChangeColWidth }X|@{}}\hline 
+\textbf {\vhversionname }
+ & \textbf {\vhdatename }
+ & \textbf {\vhauthorname }
+ & \textbf {\vhchangename }\\\hline 
+1.0
+ & 28/04/1398
+ & \listset {مرتضی ذاکری}
+ & تدوین اولیه طرح\\\hline 
+0.1
+ & 30/04/1398
+ & \listset {مرتضی ذاکری}
+ & ویراست اول\\\hline 
+\end {longtable}

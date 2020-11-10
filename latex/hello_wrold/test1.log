@@ -1,0 +1,827 @@
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.6.30)  28 FEB 2020 18:44
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**test1.tex
+(./test1.tex
+LaTeX2e <2018-04-01> patch level 2
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+(d:/texlive/2018/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(d:/texlive/2018/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(d:/texlive/2018/texmf-dist/tex/xelatex/xepersian/xepersian.sty
+Package: xepersian 2018/01/28 v21.1 Persian typesetting in XeLaTeX
+
+(d:/texlive/2018/texmf-dist/tex/latex/fontspec/fontspec.sty
+(d:/texlive/2018/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(d:/texlive/2018/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2018/03/05 L3 programming layer (loader) 
+
+(d:/texlive/2018/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2018/03/05 L3 programming layer (code)
+\c_max_int=\count88
+\l_tmpa_int=\count89
+\l_tmpb_int=\count90
+\g_tmpa_int=\count91
+\g_tmpb_int=\count92
+\g__intarray_font_int=\count93
+\g__prg_map_int=\count94
+\c_log_iow=\count95
+\l_iow_line_count_int=\count96
+\l__iow_line_target_int=\count97
+\l__iow_one_indent_int=\count98
+\l__iow_indent_int=\count99
+\c_zero_dim=\dimen103
+\c_max_dim=\dimen104
+\l_tmpa_dim=\dimen105
+\l_tmpb_dim=\dimen106
+\g_tmpa_dim=\dimen107
+\g_tmpb_dim=\dimen108
+\c_zero_skip=\skip43
+\c_max_skip=\skip44
+\l_tmpa_skip=\skip45
+\l_tmpb_skip=\skip46
+\g_tmpa_skip=\skip47
+\g_tmpb_skip=\skip48
+\c_zero_muskip=\muskip10
+\c_max_muskip=\muskip11
+\l_tmpa_muskip=\muskip12
+\l_tmpb_muskip=\muskip13
+\g_tmpa_muskip=\muskip14
+\g_tmpb_muskip=\muskip15
+\l_keys_choice_int=\count100
+\c__fp_leading_shift_int=\count101
+\c__fp_middle_shift_int=\count102
+\c__fp_trailing_shift_int=\count103
+\c__fp_big_leading_shift_int=\count104
+\c__fp_big_middle_shift_int=\count105
+\c__fp_big_trailing_shift_int=\count106
+\c__fp_Bigg_leading_shift_int=\count107
+\c__fp_Bigg_middle_shift_int=\count108
+\c__fp_Bigg_trailing_shift_int=\count109
+\l__sort_length_int=\count110
+\l__sort_min_int=\count111
+\l__sort_top_int=\count112
+\l__sort_max_int=\count113
+\l__sort_true_max_int=\count114
+\l__sort_block_int=\count115
+\l__sort_begin_int=\count116
+\l__sort_end_int=\count117
+\l__sort_A_int=\count118
+\l__sort_B_int=\count119
+\l__sort_C_int=\count120
+\l__tl_build_start_index_int=\count121
+\l__tl_build_index_int=\count122
+\l__tl_analysis_normal_int=\count123
+\l__tl_analysis_index_int=\count124
+\l__tl_analysis_nesting_int=\count125
+\l__tl_analysis_type_int=\count126
+\l__regex_internal_a_int=\count127
+\l__regex_internal_b_int=\count128
+\l__regex_internal_c_int=\count129
+\l__regex_balance_int=\count130
+\l__regex_group_level_int=\count131
+\l__regex_mode_int=\count132
+\c__regex_cs_in_class_mode_int=\count133
+\c__regex_cs_mode_int=\count134
+\l__regex_catcodes_int=\count135
+\l__regex_default_catcodes_int=\count136
+\c__regex_catcode_L_int=\count137
+\c__regex_catcode_O_int=\count138
+\c__regex_catcode_A_int=\count139
+\c__regex_all_catcodes_int=\count140
+\l__regex_show_lines_int=\count141
+\l__regex_min_state_int=\count142
+\l__regex_max_state_int=\count143
+\l__regex_left_state_int=\count144
+\l__regex_right_state_int=\count145
+\l__regex_capturing_group_int=\count146
+\l__regex_min_pos_int=\count147
+\l__regex_max_pos_int=\count148
+\l__regex_curr_pos_int=\count149
+\l__regex_start_pos_int=\count150
+\l__regex_success_pos_int=\count151
+\l__regex_curr_char_int=\count152
+\l__regex_curr_catcode_int=\count153
+\l__regex_last_char_int=\count154
+\l__regex_case_changed_char_int=\count155
+\l__regex_curr_state_int=\count156
+\l__regex_step_int=\count157
+\l__regex_min_active_int=\count158
+\l__regex_max_active_int=\count159
+\l__regex_replacement_csnames_int=\count160
+\l__regex_match_count_int=\count161
+\l__regex_min_submatch_int=\count162
+\l__regex_submatch_int=\count163
+\l__regex_zeroth_submatch_int=\count164
+\g__regex_trace_regex_int=\count165
+\c_empty_box=\box26
+\l_tmpa_box=\box27
+\l_tmpb_box=\box28
+\g_tmpa_box=\box29
+\g_tmpb_box=\box30
+\l__box_top_dim=\dimen109
+\l__box_bottom_dim=\dimen110
+\l__box_left_dim=\dimen111
+\l__box_right_dim=\dimen112
+\l__box_top_new_dim=\dimen113
+\l__box_bottom_new_dim=\dimen114
+\l__box_left_new_dim=\dimen115
+\l__box_right_new_dim=\dimen116
+\l__box_internal_box=\box31
+\l__coffin_internal_box=\box32
+\l__coffin_internal_dim=\dimen117
+\l__coffin_offset_x_dim=\dimen118
+\l__coffin_offset_y_dim=\dimen119
+\l__coffin_x_dim=\dimen120
+\l__coffin_y_dim=\dimen121
+\l__coffin_x_prime_dim=\dimen122
+\l__coffin_y_prime_dim=\dimen123
+\c_empty_coffin=\box33
+\l__coffin_aligned_coffin=\box34
+\l__coffin_aligned_internal_coffin=\box35
+\l_tmpa_coffin=\box36
+\l_tmpb_coffin=\box37
+\l__coffin_display_coffin=\box38
+\l__coffin_display_coord_coffin=\box39
+\l__coffin_display_pole_coffin=\box40
+\l__coffin_display_offset_dim=\dimen124
+\l__coffin_display_x_dim=\dimen125
+\l__coffin_display_y_dim=\dimen126
+\l__coffin_bounding_shift_dim=\dimen127
+\l__coffin_left_corner_dim=\dimen128
+\l__coffin_right_corner_dim=\dimen129
+\l__coffin_bottom_corner_dim=\dimen130
+\l__coffin_top_corner_dim=\dimen131
+\l__coffin_scaled_total_height_dim=\dimen132
+\l__coffin_scaled_width_dim=\dimen133
+)
+(d:/texlive/2018/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
+File: l3xdvidpfmx.def 2017/03/18 v L3 Experimental driver: xdvipdfmx
+\g__driver_image_int=\count166
+))
+Package: xparse 2018/02/21 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count167
+\g__xparse_grabber_int=\count168
+\l__xparse_m_args_int=\count169
+\l__xparse_mandatory_args_int=\count170
+\l__xparse_v_nesting_int=\count171
+)
+Package: fontspec 2017/11/09 v2.6g Font selection for XeLaTeX and LuaLaTeX
+
+(d:/texlive/2018/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2017/11/09 v2.6g Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count172
+\l__fontspec_language_int=\count173
+\l__fontspec_strnum_int=\count174
+\l__fontspec_tmp_int=\count175
+\l__fontspec_em_int=\count176
+\l__fontspec_emdef_int=\count177
+\l__fontspec_strong_int=\count178
+\l__fontspec_strongdef_int=\count179
+\l__fontspec_tmpa_dim=\dimen134
+\l__fontspec_tmpb_dim=\dimen135
+\l__fontspec_tmpc_dim=\dimen136
+\g__file_internal_ior=\read1
+
+(d:/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+(d:/texlive/2018/texmf-dist/tex/latex/base/tuenc.def
+File: tuenc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TU on input line 82.
+))
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fontspec with sig. 'O{}mO{}' on line 542.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmainfont with sig. 'O{}mO{}' on line 546.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setsansfont with sig. 'O{}mO{}' on line 550.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmonofont with sig. 'O{}mO{}' on line 554.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathrm with sig. 'O{}mO{}' on line 558.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setboldmathrm with sig. 'O{}mO{}' on line 562.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathsf with sig. 'O{}mO{}' on line 566.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathtt with sig. 'O{}mO{}' on line 570.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setromanfont with sig. 'O{}mO{}' on line 574.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfamily with sig. 'mO{}mO{}' on line 578.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontface with sig. 'mO{}mO{}' on line 582.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \defaultfontfeatures with sig. 't+om' on line 586.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addfontfeatures with sig. 'm' on line 590.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addfontfeature with sig. 'm' on line 594.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfeature with sig. 'mm' on line 598.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newAATfeature with sig. 'mmmm' on line 602.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newopentypefeature with sig. 'mmm' on line 606.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newICUfeature with sig. 'mmm' on line 610.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeature with sig. 'mm' on line 614.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeatureoption with sig. 'mmm' on line 618.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontscript with sig. 'mm' on line 622.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontlanguage with sig. 'mm' on line 626.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareFontsExtensions with sig. 'm' on line 630.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \IfFontFeatureActiveTF with sig. 'mmm' on line 634.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingCommand with sig. 'mO{}m' on line 3632.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingAccent with sig. 'mm' on line 3638.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingSymbol with sig. 'mm' on line 3644.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingComposite with sig. 'mmm' on line 3650.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingCompositeCommand with sig. 'mmm' on line 3656.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareUnicodeEncoding with sig. 'mm' on line 3681.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareSymbol with sig. 'm' on line 3687.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareAccent with sig. 'm' on line 3693.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareCommand with sig. 'm' on line 3699.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareComposite with sig. 'mm' on line 3706.
+.................................................
+
+(d:/texlive/2018/texmf-dist/tex/latex/fontspec/fontspec.cfg)
+LaTeX Info: Redefining \itshape on input line 3891.
+LaTeX Info: Redefining \slshape on input line 3896.
+LaTeX Info: Redefining \scshape on input line 3901.
+LaTeX Info: Redefining \upshape on input line 3906.
+LaTeX Info: Redefining \em on input line 3936.
+LaTeX Info: Redefining \emph on input line 3961.
+LaTeX Info: Redefining \- on input line 4015.
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \oldstylenums with sig. 'm' on line 4110.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \liningnums with sig. 'm' on line 4114.
+.................................................
+))
+(d:/texlive/2018/texmf-dist/tex/xelatex/xepersian/xepersian-persiancal.sty
+Package: xepersian-persiancal 2012/07/25 v0.2 provides Persian calendar
+\XePersian@i=\count180
+\XePersian@y=\count181
+\XePersian@m=\count182
+\XePersian@d=\count183
+\XePersian@latini=\count184
+\XePersian@persiani=\count185
+\XePersian@latinii=\count186
+\XePersian@persianii=\count187
+\XePersian@latiniii=\count188
+\XePersian@persianiii=\count189
+\XePersian@latiniv=\count190
+\XePersian@persianiv=\count191
+\XePersian@latinv=\count192
+\XePersian@persianv=\count193
+\XePersian@latinvi=\count194
+\XePersian@persianvi=\count195
+\XePersian@latinvii=\count196
+\XePersian@persianvii=\count197
+\XePersian@latinviii=\count198
+\XePersian@persianviii=\count199
+\XePersian@latinix=\count266
+\XePersian@persianix=\count267
+\XePersian@latinx=\count268
+\XePersian@persianx=\count269
+\XePersian@latinxi=\count270
+\XePersian@persianxi=\count271
+\XePersian@latinxii=\count272
+\XePersian@persianxii=\count273
+\XePersian@persianxiii=\count274
+\XePersian@temp=\count275
+\XePersian@temptwo=\count276
+\XePersian@tempthree=\count277
+\XePersian@yModHundred=\count278
+\XePersian@thirtytwo=\count279
+\XePersian@dn=\count280
+\XePersian@sn=\count281
+\XePersian@mminusone=\count282
+)
+(d:/texlive/2018/texmf-dist/tex/xelatex/xepersian/xepersian-mathsdigitspec.sty
+Package: xepersian-mathsdigitspec 2018/01/01 v1.1.5 Unicode Persian maths digit
+s in XeLaTeX
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \new@mathbf with sig. 'm' on line 132.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \new@mathit with sig. 'm' on line 140.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \new@mathrm with sig. 'm' on line 148.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \new@mathsf with sig. 'm' on line 156.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \new@mathtt with sig. 'm' on line 164.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathdigitfont with sig. 'O{}mO{}' on line 169.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathsfdigitfont with sig. 'O{}mO{}' on line 203.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathttdigitfont with sig. 'O{}mO{}' on line 217.
+.................................................
+) (d:/texlive/2018/texmf-dist/tex/xelatex/bidi/bidi.sty
+Package: bidi 2018/02/22 v32.9 Bidirectional typesetting in plain TeX and LaTeX
+
+
+****************************************************
+* 
+* bidi package (Bidirectional typesetting in
+* plain TeX and LaTeX, using XeTeX engine)
+* 
+* Description: A convenient interface for
+* typesetting bidirectional texts in plain TeX
+* and LaTeX. The package includes adaptations
+* for use with many other commonly-used packages.
+* 
+* Copyright (c) 2009--2018 Vafa Khalighi
+* 
+* v32.9, 2018/02/22
+* 
+* License: LaTeX Project Public License, version
+* 1.3c or higher (your choice)
+* 
+* Location on CTAN: /macros/xetex/latex/bidi
+* 
+* Issue tracker: https://github.com/tex-xet/bidi/issues
+* 
+* Support: persian-tex@tug.org
+* 
+****************************************************
+(d:/texlive/2018/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2013/04/04 v0.2 Provides if(tex) conditional for PDFTeX, XeTeX, 
+and LuaTeX
+)
+(d:/texlive/2018/texmf-dist/tex/xelatex/bidi/biditools.sty
+Package: biditools 2018/02/22 v1.4 Programming tools for bidi package
+\@bidi@envbody=\toks14
+\@bidi@emptytoks=\toks15
+\bidi@tempcountb=\count283
+\bidi@temptoksa=\toks16
+\bidi@temptoksb=\toks17
+\bidi@dummies=\count284
+\bidi@are@these@correct=\toks18
+\bidi@toks@lista=\toks19
+\bidi@toks@listb=\toks20
+\bidi@stack@length=\count285
+\bidi@empty@stack=\toks21
+\bidi@looprepeat@depth=\count286
+)
+(d:/texlive/2018/texmf-dist/tex/latex/oberdiek/zref-abspage.sty
+Package: zref-abspage 2016/05/21 v2.26 Module abspage for zref (HO)
+
+(d:/texlive/2018/texmf-dist/tex/latex/oberdiek/zref-base.sty
+Package: zref-base 2016/05/21 v2.26 Module base for zref (HO)
+
+(d:/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+(d:/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(d:/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(d:/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(d:/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+))
+(d:/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+)
+(d:/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(d:/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+)
+(d:/texlive/2018/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+Package zref Info: New property list: main on input line 759.
+Package zref Info: New property: default on input line 760.
+Package zref Info: New property: page on input line 761.
+)
+(d:/texlive/2018/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+)
+\c@abspage=\count287
+Package zref Info: New property: abspage on input line 62.
+)
+(d:/texlive/2018/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(d:/texlive/2018/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(d:/texlive/2018/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks22
+\XKV@tempa@toks=\toks23
+
+(d:/texlive/2018/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count288
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\@bidi@copyins@=\insert252
+
+(d:/texlive/2018/texmf-dist/tex/xelatex/bidi/latex-xetex-bidi.def
+File: latex-xetex-bidi.def 2018/02/22 v1.3.3 bidi adaptations for `latex.ltx' f
+or XeTeX engine
+\bidi@n@everypar=\toks24
+\bidi@column@check@number=\count289
+
+(d:/texlive/2018/texmf-dist/tex/xelatex/bidi/footnote-xetex-bidi.def
+File: footnote-xetex-bidi.def 2017/08/09 v1.1 bidi footnote macros for XeTeX en
+gine
+\c@footdir@label=\count290
+\footdir@toks=\toks25
+)
+(d:/texlive/2018/texmf-dist/tex/xelatex/bidi/article-xetex-bidi.def
+File: article-xetex-bidi.def 2017/06/09 v0.6 bidi adaptations for standard arti
+cle class for XeTeX engine
+))
+(d:/texlive/2018/texmf-dist/tex/xelatex/bidi/loadingorder-xetex-bidi.def
+File: loadingorder-xetex-bidi.def 2017/12/29 v0.97 making sure that bidi is the
+ last package loaded
+)
+\bidi@digits=\count291
+\bidi@digits@charclass=\XeTeXcharclass1
+\bidi@sepmark@charclass=\XeTeXcharclass2
+)
+****************************************************
+* 
+* xepersian package (Persian for LaTeX, using XeTeX engine)
+* 
+* Description: The package supports Persian
+* typesetting, using fonts provided in the
+* distribution.
+* 
+* Copyright (c) 2008--2018 Vafa Khalighi
+* 
+* v21.1, 2018/01/28
+* 
+* License: LaTeX Project Public License, version
+* 1.3c or higher (your choice)
+* 
+* Location on CTAN: /macros/xetex/latex/xepersian
+* 
+* Issue tracker: https://github.com/tex-xet/xepersian/issues
+* 
+* Support: persian-tex@tug.org
+* 
+****************************************************
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \settextfont with sig. 'O{}mO{}' on line 125.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \settextdigitfont with sig. 'O{}mO{}' on line 149.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setdigitfont with sig. 'O{}mO{}' on line 191.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setlatintextfont with sig. 'O{}mO{}' on line 196.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \defpersianfont with sig. 'mO{}mO{}' on line 222.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \deflatinfont with sig. 'mO{}mO{}' on line 240.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setpersiansansfont with sig. 'O{}mO{}' on line 289.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setpersianmonofont with sig. 'O{}mO{}' on line 313.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setnavarfont with sig. 'O{}mO{}' on line 337.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setpookfont with sig. 'O{}mO{}' on line 361.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setsayehfont with sig. 'O{}mO{}' on line 385.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setiranicfont with sig. 'O{}mO{}' on line 409.
+.................................................
+\xepersian@tcl=\count292
+\xepersian@ilg=\dimen137
+\xepersian@strutilg=\dimen138
+(d:/texlive/2018/texmf-dist/tex/xelatex/xepersian/loadingorder-xepersian.def
+File: loadingorder-xepersian.def 2017/09/06 v0.4 making sure that xepersian is 
+the last package loaded
+)
+(d:/texlive/2018/texmf-dist/tex/xelatex/xepersian/footnote-xepersian.def
+File: footnote-xepersian.def 2017/08/09 v0.6 footnote macros for xepersian pack
+age
+)
+(d:/texlive/2018/texmf-dist/tex/xelatex/xepersian/article-xepersian.def
+File: article-xepersian.def 2010/07/25 v0.2 adaptations for standard article cl
+ass
+)
+\g__fontspec_family_lmroman10-regular_int=\count293
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'lmroman10-regular(0)' created for font 'lmroman10-regular' with
+. options
+. [Mapping=tex-text,ExternalLocation,BoldFont={lmroman10-bold},BoldItalicFont={
+lmroman10-bolditalic},ItalicFont={lmroman10-italic},SmallCapsFont={lmromancaps1
+0-regular},SlantedFont={lmromanslant10-regular},BoldSlantedFont={lmromanslant10
+-bold}].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->"[lmroman10-regular]/OT:script=latn;language=DFLT;mapping=tex-text;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->"[lmromancaps10-regular]/OT:script=latn;language=DFLT;mapping=tex-text;"
+. - 'bold' (bx/n) with NFSS spec.:
+. <->"[lmroman10-bold]/OT:script=latn;language=DFLT;mapping=tex-text;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.:
+. <->"[lmromancaps10-regular]/OT:script=latn;language=DFLT;mapping=tex-text;"
+. - 'italic' (m/it) with NFSS spec.:
+. <->"[lmroman10-italic]/OT:script=latn;language=DFLT;mapping=tex-text;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.:
+. <->"[lmromancaps10-regular]/OT:script=latn;language=DFLT;mapping=tex-text;"
+. - 'slanted' (m/sl) with NFSS spec.:
+. <->"[lmromanslant10-regular]/OT:script=latn;language=DFLT;mapping=tex-text;"
+. - 'slanted small caps'  (m/slsc) with NFSS spec.:
+. <->"[lmromancaps10-regular]/OT:script=latn;language=DFLT;mapping=tex-text;"
+. - 'bold italic' (bx/it) with NFSS spec.:
+. <->"[lmroman10-bolditalic]/OT:script=latn;language=DFLT;mapping=tex-text;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+. <->"[lmromancaps10-regular]/OT:script=latn;language=DFLT;mapping=tex-text;"
+. - 'bold slanted' (bx/sl) with NFSS spec.:
+. <->"[lmromanslant10-bold]/OT:script=latn;language=DFLT;mapping=tex-text;"
+. - 'bold slanted small caps'  (bx/slsc) with NFSS spec.:
+. <->"[lmromancaps10-regular]/OT:script=latn;language=DFLT;mapping=tex-text;"
+.................................................
+)
+*************************************************
+* fontspec warning: "language-not-exist"
+* 
+* Language 'Parsi' not available for font 'B Nazanin' with script 'Parsi'.
+*  'Default' language used instead.
+*************************************************
+\g__fontspec_family_BNazanin_int=\count294
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "B Nazanin/I" (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'BNazanin(0)' created for font 'B Nazanin' with options
+. [Script=Parsi,Language=Parsi,Mapping=parsidigits].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.: <->"B
+. Nazanin/OT:script=arab;language=DFLT;mapping=parsidigits;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+. - 'bold' (bx/n) with NFSS spec.: <->"B
+. Nazanin/B/OT:script=arab;language=DFLT;mapping=parsidigits;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: 
+. - 'bold italic' (bx/it) with NFSS spec.: <->"B
+. Nazanin/BI/OT:script=arab;language=DFLT;mapping=parsidigits;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
+.................................................
+(./test1.aux)
+\openout1 = `test1.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+\AtBeginShipoutBox=\box41
+Missing character: There is no c in font B Nazanin/OT:script=arab;language=DFLT
+;mapping=parsidigits;!
+Missing character: There is no o in font B Nazanin/OT:script=arab;language=DFLT
+;mapping=parsidigits;!
+Missing character: There is no d in font B Nazanin/OT:script=arab;language=DFLT
+;mapping=parsidigits;!
+Missing character: There is no e in font B Nazanin/OT:script=arab;language=DFLT
+;mapping=parsidigits;!
+ [1
+
+] (./test1.aux) ) 
+Here is how much of TeX's memory you used:
+ 12671 strings out of 492970
+ 284309 string characters out of 6137298
+ 392980 words of memory out of 5000000
+ 16599 multiletter control sequences out of 15000+600000
+ 530384 words of font info for 36 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 60i,4n,67p,10450b,261s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on test1.pdf (1 page).

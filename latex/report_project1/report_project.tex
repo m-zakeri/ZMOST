@@ -1,0 +1,76 @@
+\documentclass{report}
+\usepackage{graphicx}
+
+%% Use loaclise option to tyep Latex commands in Persian (Optional)
+\usepackage[localise]{xepersian}
+
+\usepackage[utf8]{inputenc}
+
+
+\نویسنده{مرتضی ذاکری}
+\عنوان {قالب گزارش دوره کارشناسی ارشد}
+
+
+\graphicspath{ {imgs/} }
+\settextfont{XB Niloofar}
+
+\begin{document}
+
+	\begin{titlepage}
+		\begin{center}
+			\includegraphics[scale=0.35]{./imgs/IUST_logo_color.png}
+			\baselineskip=1.2cm
+			\\
+			دانشکده مهندسی کامپیوتر
+			\\
+			گروه مهندسی نرم افزار
+			%\vspace{2cm}
+			\\
+			{\large عنوان پروژه:}
+			\\
+			{\huge\settextfont[Scale=.9]{XB Titre} بررسی ساختار فایل های اجرایی ویندوز}
+			\\ 
+			پیش نویس اول پروژه کلاسی 
+			\textbf{شماره 3 }
+			درس کامپایلر پیشرفته 
+			\\
+			
+		{\large 	دانشجو:}
+			\\
+{\large \textbf{مرتضی ذاکری} }
+			\\
+			
+			استاد:
+			\\
+		{\large \textbf{دکتر سعید پارسا} }
+			\\
+			
+			زمستان 1395
+		%\maketitle
+		
+		\end{center}
+	\end{titlepage}
+
+\begin{abstract}
+	فایل PE یا Portable Executable قالب فایلی است که در سیستم ها عامل ویندوز به کار می رود (در هر دو نسخه 32 و 64 بیتی). PE قالب استاندارد شده ای برای فایل هایی با پسوند های رایج زیر است:
+\lr{.exe, .dll, .obj, .acm, .ax, .cpl, .drv, .efi}
+	در واقع PE داده ساختاری است شامل اطلاعات لازم برای ماژول بارکننده برنامه در سیستم عامل که نهایتا فایل را برای اجرا شدن در حافظه قرار می دهد. قبل از ابداع این قالب، قالبی به نام COFF وجود داشت که در سیستم های Windows NT استفاده می شد.
+	
+\end{abstract}
+\newpage
+\tableofcontents
+\newpage
+	
+%\pagename{صفحه اول}
+    
+	\part{طراحی}
+	\chapter{شروع}
+	\section{مقدمه}
+	در این گزارش به بررسی ساختار فایل های اجرایی می پردازیم.
+	\قسمت{بازی تاج و تخت}
+	\subsection{روش کار}
+	
+	\section{ساختار کلی}
+	اساسا فایل PE از دو بخش تقسیم شده است که هریک دارای زیر بخش های مختلفی می باشد. بخش اول Header و بخش دیگر Section نام دارد. شکل ‏2 1 بخش های اصلی و زیر بخش های درون هریک را به صورت گرافیکی نشان می دهد.
+	
+\end{document}

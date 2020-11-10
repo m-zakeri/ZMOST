@@ -1,0 +1,5 @@
+theme: jekyll-theme-minimal
+title: "MOST"
+description: "Modern Open Scientific/Standard Templates"
+logo: "./figs/andishe2.png"
+show_downloads: "true"

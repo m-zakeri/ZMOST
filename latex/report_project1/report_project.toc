@@ -1,0 +1,6 @@
+\contentsline {part}{اول\hspace {1em}طراحی}{2}
+\contentsline {chapter}{\numberline {1}شروع}{3}
+\contentsline {section}{\numberline {1.1}مقدمه}{3}
+\contentsline {section}{\numberline {1.2}بازی تاج و تخت}{3}
+\contentsline {subsection}{\numberline {1.2.1}روش کار}{3}
+\contentsline {section}{\numberline {1.3}ساختار کلی}{3}
