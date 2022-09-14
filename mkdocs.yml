@@ -1,0 +1,46 @@
+site_name: MOST
+site_url: https://m-zakeri.github.io
+repo_url: https://github.com/m-zakeri/IUSTCompiler
+site_description: Modern Open Scientific/Standard Templates
+site_author: Morteza Zakeri-Nasrabadi
+copyright: © 2020-2022
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: purple
+      accent: purple
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Dark mode
+    - scheme: slate
+      primary: purple
+      accent: purple
+      toggle:
+        icon: material/toggle-switch
+        name: Light mode
+  icon:
+    logo: material/library
+  features:
+    - header.autohide
+  extra:
+    social:
+      - icon: fontawesome/brands/linkedin
+        link: https://www.linkedin.com/in/mortazazakeri/
+
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          setup_commands:
+            - import sys
+            - import os
+          selection:
+            members: True
+
+nav:
+    - Home: index.md
+    - Issue Tracker: 'https://github.com/m-zakeri/ZMOST/issues'

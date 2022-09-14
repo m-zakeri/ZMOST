@@ -1,0 +1,152 @@
+% !TeX TS-program = XeLaTeX
+
+% Commands for running this thesis:
+% $ xelatex main
+% $ bibtex8 -W -c cp1256fa maintext
+% $  xindy -L persian -C utf8 -M texindy maintext
+% $ xelatex maintext
+% $ xelatex maintext
+% End of Commands
+
+%%%%%%%%%%%%%%
+%% Welcome to Latex Template for IUST CE Thesis
+%% The v0.8 quotes
+%% The nearest star is 4.25 light-years from Earth which is why most wishes take at least 9 years to come true :)
+%%%%%%%%%%%%%%% 
+
+%%%
+%%% خوش آمدید!
+% قالب پایان‌نامه‌های کارشناسی، ارشد و دکتری، دانشگاه علم و صنعت ایران، دانشکده مهندسی کامپیوتر، آماده شده با استفاده از کلاس IUST-Thesis.
+% نــگارش 0.9 توسط مرتضی ذاکری نصرآبادی - اردیبهشت 1399
+% نــگارش 0.8 توسط مرتضی ذاکری نصرآبادی - مهر 1398
+% نــگارش 0.7 توسط مرتضی ذاکری نصرآبادی  - تیر 1397
+% - نــگارش 0.7 براساس نگارش 0.6 دکتر محمود امین طوسی آماده شده است.
+% - این نسخه بر اساس نگارش 0.7 ساخته شده است. 
+
+%استفاده از قالب با رعایت حقوق نشر، آزاد است.
+%%% 
+% نگارش 0.6 توسط محمود امین‌طوسی، دانشگاه تربیت معلم سبزوار، http://profsite.sttu.ac.ir/mamintoosi/
+% گروه پارسی‌لاتک  http://www.parsilatex.com
+% نگارش 0.6، بر اساس نسخه‌ 0.4 از کلاس Tabriz_Thesis آقای وحید دامن‌افشان آماده شده است؛ رجوع شود به: http://damanafshan.tk
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+
+%%% تغییرات 
+% نسخه 0.8:
+% - افزودن بسته \usepackage{verbatim} برای مدیریت توضیحات متن
+% - بروزرسانی گرافیک و فونت صفحه عنوان فارسی
+% - متناسب سازی برای رساله دکتری
+
+% نسخه 0.7: 
+% - بروز رسانی بسته‌ها، اصلاح مشکلات مربوط به عدم تطابق با texlive2018 و اصلاحات جزئی دیگر. پرسش و پاسخ و ارسال دیدگاه‌ها:  
+% http://m-zakeri.github.io
+% -ریز تغییرات به شرح زیر است:
+% -- اضافه شدن بسته‌(ها)ی مدیریت واژگان و کوته‌نوشت‌ها به صورت خودکار 
+% -- اضافه شدن بسته‌ها و تنظیمات مربوط به درج کدمنبع برنامه‌ها در متن پایان نامه.
+% -- اضافه شدن بسته‌ها و تنظیمات مروبط به درج الگوریتم‌ در استانداردهای نوشتاری نوین در متن پایان‌نامه.
+% -- اضافه شدن بسته‌ها و تنظیمات مربوط به درج جدول در استانداردهای نوشتاری نوین در متن پایان‌نامه.
+% -- اضافه شدن بسته‌ها و تنظیمات درج bookmark در خروجی.
+% -- اضافه شدن بسته‌ها و تنظیمات درج صحیح پاورقی‌ها
+% -- اضافه شدن بسته‌ها و تنظیمات مربوط به ایجاد نسخه‌های پیش‌نویس و نیز متن پس‌زمینه
+% -- اضافه شدن بسته‌ها و تنظیمات مربوط به درج نقل قول‌های مستقیم و غیر مستقیم و epigraph
+% -- اضافه شدن سایر بسته‌های مربوط به مدیریت فونت و استایل پایان‌نامه و ساختاربندی مجزای تصاویر و کدها (ارائه پارتیشن‌بندی استاندارد).
+
+ 
+% نسخه 0.6:
+% -- اصلاح مشکل بسته subfig 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% -- اگر قصد نوشتن پروژه کارشناسی را دارید، در خط زیر به جای msc، کلمه bsc و اگر قصد نوشتن پروژه دکترا را دارید، کلمه phd را قرار دهید. کلیه تنظیمات لازم، به طور خودکار، اعمال می‌شود.
+% -- اگر مایلید پایان‌نامه  دو رو باشد به جای oneside در خط زیر از twoside استفاده کنید.
+\documentclass[twoside, openany, phd]{IUST-Thesis} % draft
+
+% -- فایل settings.tex را مطالعه کنید. دستورات مربوط به فراخوانی بسته زی‌پرشین و دیگر بسته‌ها، در این فایل قرار دارد. بهتر است که با نحوه استفاده از آنها آشنا شوید.
+\input{settings}
+\input{settings-glossary}
+\input{acronym}
+\input{glossary}
+\begin{document}
+ %% Set spacing
+\titlespacing\section{1pt}{2pt plus 2pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{1pt}{2pt plus 2pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{1pt}{2pt plus 2pt minus 2pt}{0pt plus 2pt minus 2pt}
+%\setlength{\textfloatsep}{\baselineskip}
+\setlength{\textfloatsep}{10pt}
+%
+%\setstretch{1}
+\setlength{\abovedisplayskip}{1pt}
+\setlength{\belowdisplayskip}{1pt}
+%% End of set spacing
+
+
+\pagenumbering{harfi} % شماره صفحه حرفی %
+% -- مشخصات پایان‌نامه را در فایل‌های titlefa و titleen وارد نمایید.
+\input{title-persian} % مشخصات فارسی پایان نامه %
+%\input{listacronyms}
+
+\hypertarget{tableofcontent}{\tableofcontents}\label{tableofcontent2} % فهرست مطالب %
+\clearpage
+
+\listoffigures 
+\clearpage
+
+\listoftables
+\clearpage
+
+%\hypertarget{tableofalgorithms}{\listofalgorithms}
+%\phantomsection
+%\addcontentsline{toc}{chapter}{\listalgorithmname}
+%\listofalgorithms
+%\clearpage
+
+\printacronyms
+\clearpage
+
+\pagestyle{fancy}
+% اگر فصل اول  خود را در فایلی به جز chapter1 همراه با این کلاس نوشته‌اید، باید چند خط اول chapter1 را در فایل خود کپی کنید. %
+
+\include{chapter/chapter1} % فصل اول: مقدمه %
+\include{chapter/chapter2} % فصل دوم: ادبیات موضوع %
+\include{chapter/chapter3} % فصل سوم: سنجش و بهبود آزمون‌پذیری کد منبع و طراحی نرم‌افزار %
+\include{chapter/chapter4} % فصل چهارم: سنجش و بهبود آزمون‌پذیری نیازمندی‌ها %
+\include{chapter/chapter5} % فصل پنجم: زمان‌بندی پیشنهادی %
+\clearpage
+ % مراجع %
+%\pagestyle{empty}
+%\pagestyle{fancy}
+%\fancyhead[LE,RO]{\slshape \rightmark}
+\fancyhead[LO,RE]{\slshape }
+\onehalfspacing
+%\fancyhead[LE,RO]{\slshape ک}
+%\fancyhead[LO,RE]{\slshape م}
+	% تعیین قالب درج مراجع %
+\bibliographystyle{ieeetr-fa}%{acm-fa}%{chicago-fa}%{plainnat-fa}%
+\bibliography{bibitems/references-all.bib}
+
+%\pagestyle{empty}
+
+\clearpage
+% ضمائم %
+\appendix % فصل های پس از این قسمت به عنوان ضمیمه خواهند آمد. %
+% -- اگر پیوست اول خود را در فایلی به جز appendix1 همراه با این کلاس نوشته‌اید، باید چندخط اول appendix1 را در فایل خود کپی کنید.
+%\pagestyle{fancy}
+%\fancyhead[LE,RO]{\slshape \rightmark}
+\fancyhead[LO,RE]{\slshape \leftmark}
+%\include{chapter/appendix1}
+%\include{chapter/appendix2}
+%\baselineskip=.75cm
+\clearpage
+
+\fancyhead[LO, RE]{\slshape}
+\onehalfspacing
+\printglossary %Glossary and index %
+%\phantomsection
+%\addcontentsline{toc}{chapter}{\indexname}
+%\printindex
+\clearpage
+\bookmark[dest=latintitle]{Latin Abstract and Title}
+\input{title-english} % Thesis english title %
+
+
+\end{document}
