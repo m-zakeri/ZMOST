@@ -1,9 +1,9 @@
 site_name: MOST
 site_url: https://m-zakeri.github.io
-repo_url: https://github.com/m-zakeri/IUSTCompiler
+repo_url: https://github.com/m-zakeri/ZMOST
 site_description: Modern Open Scientific/Standard Templates
 site_author: Morteza Zakeri-Nasrabadi
-copyright: © 2020-2022
+copyright: © 2020-2022 Morteza Zakeri-Nasrabadi
 
 theme:
   name: material
