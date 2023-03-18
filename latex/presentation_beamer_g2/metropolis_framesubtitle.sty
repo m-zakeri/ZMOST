@@ -1,0 +1,18 @@
+\ProvidesPackage{metropolis_framesubtitle}
+
+\addtobeamertemplate{frametitle}{}{%
+  \ifx\insertframesubtitle\@empty\else%
+  \usebeamerfont{frametitle}%
+  \usebeamercolor[fg]{framesubtitle}%
+
+\begin{beamercolorbox}[%
+    wd=\paperwidth,%
+    sep=0pt,%
+    leftskip=\metropolis@frametitle@padding,%
+    rightskip=\metropolis@frametitle@padding,%
+  ]{framesubtitle}%
+
+  \metropolis@frametitlestrut@start\insertframesubtitle\metropolis@frametitlestrut@end%
+\end{beamercolorbox}%
+  \fi%
+}
