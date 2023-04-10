@@ -11,14 +11,14 @@
 \usepackage{enumitem}
 \setlist[itemize]{noitemsep,  nolistsep}
 % در ورژن جدید زی‌پرشین برای تایپ متن‌های ریاضی، این سه بسته، حتماً باید فراخوانی شود
-\RequirePackage{amsthm, amssymb, amsmath, amsfonts}
+\RequirePackage{amsthm, amsmath, amssymb, amsfonts}
 %\RequirePackage{amssymb, amsmath, amsfonts}
 \usepackage{thmtools}
 %\usepackage{thmbox}
 
 
 % بسته‌ای برای تنطیم حاشیه‌های بالا، پایین، چپ و راست صفحه
-\usepackage[top=25mm, bottom=25mm, left=20mm, right=30mm]{geometry}
+\usepackage[top=28mm, bottom=22mm, left=16mm, right=24mm]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage{setspace}
 \usepackage{titling}
@@ -58,6 +58,7 @@
 %\usepackage{framed}  %%%%13990905
 % بسته‌‌ای برای چاپ شدن خودکار تعداد صفحات در صفحه «معرفی پایان‌نامه»
 \usepackage{lastpage}
+
 \usepackage{cite}	% Add by Morteza %
 
 % بسته‌ٔ لازم برای: ۱. تغییر شماره‌گذاری صفحات پیوست. ۲. تصحیح باگ آدرس وب حاوی '%' در مراجع
@@ -75,6 +76,9 @@
 \let\citep\cite
 \let\citelatin\cite
 \let\citeplatin\cite
+
+\usepackage{bibentry}
+
 %%%%%%%%%%%%
 %\usepackage[nostamp]{draftwatermark}
 % بررسی حالت پیش نویس
@@ -110,10 +114,10 @@
 
 % تعیین مشخصات فایل PDF
 \hypersetup{
-	pdftitle={Automatic software refactoring},
+	pdftitle={Measuring and Improving Testability of Software Systems Artifacts},
 	pdfauthor={Morteza ZAKERI},
-	pdfsubject={Ph.D. Proposal},
-	pdfkeywords={keywords},
+	pdfsubject={Ph.D. dissertation},
+	pdfkeywords={Software artifacts; testability; covergaeability; software smell; automated refactoring; intelligent software engineering; testabilty-driven development.},
     pdfdirection={R2L}
 }
 
@@ -154,10 +158,16 @@
 \usepackage{tabularx}
 %% Add by Morteza
 \usepackage{multirow}
-\usepackage{fourier} 
+\usepackage{threeparttable}
+\usepackage{fourier-otf} 
 \usepackage{array}
 \usepackage{makecell}  % I use this %
 \usepackage{booktabs}
+\usepackage{hhline}
+ \usepackage{vcell}
+ \usepackage{colortbl}
+ \usepackage{arydshln}
+%\usepackage{graphicx}
 
 %%
 % بسته‌های لازم برای رسم تنظیم بهتر شکل‌ها و زیرشکل‌ها
@@ -193,11 +203,26 @@
 %\usepackage[extrafootnotefeatures]{xepersian}
 \usepackage{xepersian}
 
-\settextfont[Path={./font/Niloofar/}, BoldFont={XBNiloofarBd.ttf}, ItalicFont={XBNiloofarIt.ttf}, BoldItalicFont={XBNiloofarBdIt.ttf}, Scale=1.0]{XBNiloofar.ttf}
+\settextfont[Path={./font/Niloofar/}, BoldFont={XBNiloofarBd.ttf}, ItalicFont={XBNiloofarIt.ttf}, BoldItalicFont={XBNiloofarBdIt.ttf}, Scale=1.05]{XBNiloofar.ttf}
 
 \setlatintextfont[Scale=0.90]{Times New Roman}
+
+
+
+%-----------------
+%% https://github.com/persiantex/xepersian/issues/17
+% this is a temporary fix as stated in https://github.com/persiantex/xepersian/issues/17#issuecomment-709956867
+\ExplSyntaxOn
+\cs_set_eq:NN
+\etex_iffontchar:D
+\tex_iffontchar:D
+\cs_undefine:N \c_one
+\int_const:Nn \c_one { 1 } 
+\ExplSyntaxOff
+%-----------------
 % چنانچه می‌خواهید اعداد در فرمول‌ها، انگلیسی باشد، خط زیر را غیرفعال کنید
-\setdigitfont[Path={./font/Zar/}, BoldFont={XBZarBd.ttf}, ItalicFont={XBZarIt.ttf}, BoldItalicFont={XBZarBdIt.ttf}, Scale=1.0]{XBZar.ttf}
+%\setdigitfont[Path={./font/Zar/}, BoldFont={XBZarBd.ttf}, ItalicFont={XBZarIt.ttf}, BoldItalicFont={XBZarBdIt.ttf}, Scale=1.0]{XBZar.ttf}
+\setmathdigitfont[Path={./font/Zar/}, BoldFont={XBZarBd.ttf}, ItalicFont={XBZarIt.ttf}, BoldItalicFont={XBZarBdIt.ttf}, Scale=1.0]{XBZar.ttf}
 
 % اگر می‌خواهید که اعداد با فونت یکان نمایش داده شوند خط بالا را غیر فعال کرده و خط زیر را فعال کنید.
 
@@ -216,6 +241,9 @@
 
 \defpersianfont\nastaliq[Path={./font/IranNastaliq/}, Scale=1.50]{IranNastaliq.ttf}
 
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 % Use the package sectsty to do change the headings, and xcolor to get the colour definitions.
 \usepackage{sectsty}
@@ -233,7 +261,7 @@
 \subsectionfont{\color{DeepSkyBlue3}}  % sets colour of sections
 
 %% Set the font-size of Figure and Table captions
-\DeclareCaptionFont{mysize}{\fontsize{10.2}{9.6}\yagut}
+\DeclareCaptionFont{mysize}{\fontsize{10.5}{9.45}\yagut}
 \captionsetup{font=mysize}
 
 \captionsetup[figure]{labelfont={color=Brown4, bf}, textfont={color=DarkSlateGrey}} %DarkSlateGrey %darkgray
@@ -245,6 +273,7 @@
 \usepackage{zref-perpage}
 \zmakeperpage{footnote}
 
+%\usepackage[rldocument]{bidi}
 \usepackage{bidi}
 \makeatletter
 \@bidi@removefromreset{footnote}{chapter}
@@ -327,7 +356,7 @@ qed=$\blacksquare$
 \newtheorem*{solution*}{راه‌حل پیشنهادی}
 %\newenvironment{\solution}{\begin{\isolution}}{\qed \end{isolution}}
 
-%\newtheorem{definition}{تعریف}[section]
+\newtheorem{definition}{تعریف}[section]
 %\theoremstyle{theorem}
 %\newtheorem{theorem}[definition]{قضیه}
 %\newtheorem{lemma}[definition]{لم}
@@ -541,6 +570,7 @@ qed=$\blacksquare$
 \usepackage{booktabs}  % professional-quality tables
 \usepackage{nicefrac}  % compact symbols for 1/2, etc.
 \usepackage{microtype}  % microtypography
+\usepackage{textcomp}
 \usepackage[algo2e, ruled, linesnumbered, resetcount]{algorithm2e}
 \def\HiLi{\leavevmode\rlap{\hbox to \hsize{\color{yellow!50}\leaders\hrule height .8\baselineskip depth .5ex\hfill}}}
 
@@ -553,9 +583,9 @@ qed=$\blacksquare$
 \renewcommand{\thesubfigure}{\harfi{subfigure}}
 
 %%%PDF setting
-\usepackage[open, openlevel=1, atend]{bookmark}[2020/11/31]
+\usepackage[open, openlevel=1, atend]{bookmark}[2022/08/30]
 \bookmarksetup{color=blue}
-\bookmark[dest=titlefa]{سنجش و بهبود خودکار آزمون‌پذیری مصنوعات سیستم‌های نرم‌افزاری}
+\bookmark[dest=titlefa]{عنوان فارسی پایان نامه}
 
 %\bookmark[dest=acknowledgement]{درباره نسخه پیش‌نویس}
 %\bookmark[dest=acknowledgment]{قدردانی}
