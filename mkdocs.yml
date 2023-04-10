@@ -3,7 +3,7 @@ site_url: https://m-zakeri.github.io
 repo_url: https://github.com/m-zakeri/ZMOST
 site_description: Modern Open Scientific/Standard Templates
 site_author: Morteza Zakeri-Nasrabadi
-copyright: © 2020-2022 Morteza Zakeri-Nasrabadi
+copyright: © 2020-2023 Morteza Zakeri-Nasrabadi
 
 theme:
   name: material
@@ -43,4 +43,6 @@ plugins:
 
 nav:
     - Home: index.md
+    - Abbreviation: Abbreviation.md
     - Issue Tracker: 'https://github.com/m-zakeri/ZMOST/issues'
+    
