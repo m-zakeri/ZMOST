@@ -2,7 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://m-zakeri.github.io/</loc>
-         <lastmod>2022-09-14</lastmod>
+         <lastmod>2023-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://m-zakeri.github.io/Abbreviation/</loc>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
