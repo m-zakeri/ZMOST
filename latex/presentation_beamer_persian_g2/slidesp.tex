@@ -1,0 +1,413 @@
+% !TeX spellcheck = fa_FA
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[xcolor=dvipsnames, 
+professionalfonts, 
+%aspectratio=169, 
+ xcolor={usenames, dvipsnames, svgnames, x11names},
+11pt]{beamer}
+\usepackage{ragged2e}
+\apptocmd{\frame}{}{\justifying}{} % Allow optional arguments after frame
+\usepackage{multicol}
+\usepackage{tikz}
+\usetikzlibrary{automata, positioning, arrows}
+\usepackage{dblfnote}
+\usepackage{float}
+\usepackage{setspace}
+\RequirePackage{etoolbox}
+\RequirePackage{keyval}
+\RequirePackage{calc}
+\RequirePackage{pgfopts}
+
+%\hypersetup{colorlinks = true}
+
+% ---------------------------------------
+% color
+% ---------------------------------------
+\definecolor{rugred}{rgb}{0.8,0,0}
+
+\definecolor{Purple}{HTML}{911146}
+
+% Set title color
+%\setbeamercolor{frametitle}{bg=Purple}
+\setbeamercolor{palette primary}{fg=white}
+
+
+\usefonttheme{serif}
+\usetheme[progressbar=foot, subsectionpage=progressbar, block=fill, numbering=fraction]{metropolis}
+\usepackage{metropolis_framesubtitle}
+
+% IMPORTANT: set subtitle color
+\setbeamercolor{framesubtitle}{fg=Purple, bg=normal text.bg}
+%\usetheme[compress]{Ilmenau} %\usetheme{Madrid}
+%% hide subsection row in headline in Ilmenau
+\makeatletter
+% \beamer@theme@subsectionfalse
+\makeatother
+%\usetheme{AnnArbor}
+%\usetheme{Frankfurt}
+%\usetheme{CambridgeUs}
+
+\makeatletter
+\defbeamertemplate*{frame numbering}{fraction2}{
+{\color{DarkOrange2}{\textbf{\insertframenumber}}} { از } \inserttotalframenumber
+}
+
+\setlength{\metropolis@titleseparator@linewidth}{3pt}
+\setlength{\metropolis@progressonsectionpage@linewidth}{3pt}
+\setlength{\metropolis@progressinheadfoot@linewidth}{3pt}
+
+% define an RTL progress bar  for metropolis theme 
+\defbeamertemplate{progress bar in section page}{RTL}{%
+	\setlength{\metropolis@progressonsectionpage}{%
+		\textwidth * \ratio{\insertframenumber pt}{\inserttotalframenumber pt}%
+	}%
+	\begin{tikzpicture}
+	\fill[bg] (0,0) rectangle (\textwidth, \metropolis@progressonsectionpage@linewidth);
+	\fill[fg] (\textwidth,0) rectangle (\textwidth-\metropolis@progressonsectionpage, \metropolis@progressonsectionpage@linewidth);
+	\end{tikzpicture}%
+}	
+
+\defbeamertemplate{progress bar in head/foot}{RTL}{
+	\nointerlineskip
+	\setlength{\metropolis@progressinheadfoot}{%
+		\paperwidth * \ratio{\insertframenumber pt}{\inserttotalframenumber pt}%
+	}%
+	\begin{beamercolorbox}[wd=\paperwidth]{progress bar in head/foot}
+		\begin{tikzpicture}
+		\fill[bg] (0,0) rectangle (\paperwidth, \metropolis@progressinheadfoot@linewidth);
+		\fill[fg] (\paperwidth,0) rectangle (\paperwidth-\metropolis@progressinheadfoot, \metropolis@progressinheadfoot@linewidth);
+		\end{tikzpicture}%
+	\end{beamercolorbox}
+}
+\makeatother
+
+\makeatletter
+\setbeamertemplate{title}{
+%\raggedright%
+\centering% 
+\linespread{0.75}%
+\inserttitle%
+\par%
+\vspace*{0.5em}
+}
+ \setbeamertemplate{subtitle}{%
+ %\raggedright%
+\centering% 
+ \insertsubtitle%
+ \par%
+ \vspace*{0.25em}
+}
+
+ \setbeamertemplate{author}{
+\vspace*{2em}
+\centering
+ \insertauthor%
+ \par%
+\vspace*{0.25em}
+}
+
+\setbeamertemplate{date}{
+\vspace*{3mm}
+\centering
+\insertdate%
+\par%
+}
+
+\setbeamertemplate{institute}{
+\vspace*{3mm}
+\centering
+\insertinstitute%
+\par%
+}
+\makeatother
+
+
+%%%%%
+ \makeatletter
+\defbeamertemplate*{section page}{progressbar2}{
+ \centering
+ \begin{minipage}{22em}
+ \raggedleft
+ \usebeamercolor[fg]{section title}
+ \usebeamerfont{section title}
+ \insertsectionhead\\[-1ex]
+ \usebeamertemplate*{progress bar in section page}
+ \par
+\ifx\insertsubsectionhead\@empty\else%
+\usebeamercolor[fg]{subsection title}%
+ \usebeamerfont{subsection title}%
+\insertsubsectionhead
+ \fi
+ \end{minipage}
+ \par
+\vspace{\baselineskip}
+ }
+
+\makeatother
+
+\include{eslahBeamer}
+
+%\setbeamertemplate{section page}{progressbar2}
+%\setbeamertemplate{subsection page}{%
+%\usebeamertemplate*{section page}
+%}
+
+\setbeamercolor{progress bar}{%
+    use=alerted text,
+    fg=alerted text.fg,
+    bg=alerted text.fg!50!black!30
+}
+\setbeamercolor{progress bar}{fg=orange, bg=gray}
+
+%\usecolortheme{wolverine}
+
+% cool and blue
+% \usecolortheme{seahorse}
+
+% \usecolortheme{rose}
+
+%% Warm and red theme
+%\usecolortheme{beaver}
+\setbeamercolor{section number projected}{bg=blue,fg=white}
+\setbeamercolor*{item}{fg=blue}
+
+%% green theme
+% \usecolortheme{spruce}
+% \setbeamercolor{section number projected}{bg=OliveGreen,fg=white}
+% \setbeamercolor*{item}{fg=OliveGreen}
+
+% \usecolortheme[named=green]{structure}
+%\setbeamercolor{normal text}{fg=blue}\usebeamercolor*{normal text}
+
+
+
+
+\setbeamertemplate{progress bar in section page}[RTL]
+\setbeamertemplate{progress bar in head/foot}[RTL]
+\setbeamerfont{frametitle}{size=\Large, series=\titlefont}
+\setbeamerfont*{subtitle}{size=\large, series=\YagutFont}
+\begin{comment}
+
+% برای شفاف کردن مواردی که در
+%\setbeamercovered{transparent}
+
+\setbeamertemplate{frametitle}
+{
+	\nointerlineskip
+	\begin{beamercolorbox}[sep=0.0cm,ht=1.6em,wd=\paperwidth]{frametitle}
+		\vbox{}\vskip-1ex%
+	\centering
+%	\raisebox{-1em}{\includegraphics[height=1.6em]{./img/eng-logo.png}} \hfill
+		{  \strut\insertframetitle\strut}
+%		\hfill		\includegraphics[height=1.6em]{./img/logo.png}
+		\vskip+0.2ex %		\vskip-0.8ex%
+	\end{beamercolorbox}
+}
+
+
+\makeatletter
+\setbeamertemplate{footline}
+{
+	\leavevmode%
+	\hbox{\tiny%\fontsize{7}{8}\selectfont%
+		\begin{beamercolorbox}[wd=.3\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}
+			\hspace*{1ex}\usebeamerfont{author in head/foot}\insertshortauthor~~\beamer@ifempty{\insertshortinstitute}{}{(\insertshortinstitute)}\hspace*{1ex}
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}
+			\usebeamerfont{title in head/foot}\insertshorttitle
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=.2\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}
+			\hfill
+			\usebeamerfont{date in head/foot}\insertshortdate{}
+			\hfill % \hspace*{4ex}% original: 2ex
+			\inserttotalframenumber / \insertframenumber{} \hspace*{1ex}% original: 2ex
+	\end{beamercolorbox}}%
+	\vskip0pt%
+}
+\makeatother
+
+\makeatletter
+\setbeamerfont{frametitle}{size=\small}
+\makeatother
+%% simple headline for one row sectino name and one row subsection name
+%\setbeamertemplate{headline}{
+%	\begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1.125ex]{section in head/foot}%
+%		\hspace{3ex}{\insertsectionhead}
+%	\end{beamercolorbox}
+%	\begin{beamercolorbox}[ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{subsection in head/foot}
+%		\usebeamerfont{subsection in head/foot}\insertsubsectionhead
+%\end{beamercolorbox}}
+
+%% add section navigation above frame title (miniframe style)
+\setbeamertemplate{headline}{%
+    \begin{beamercolorbox}{section in head/foot}
+        \vskip0pt\insertnavigation{\paperwidth}\vskip2pt
+    \end{beamercolorbox}%
+}
+% add section navigation above frame title
+%\setbeamertemplate{headline}
+%{
+%	\begin{beamercolorbox}{section in head/foot}
+%		\vskip2pt\insertsectionnavigationhorizontal{\textwidth}{}{}\vskip2pt
+%	\end{beamercolorbox}
+%}
+\setbeamertemplate{section in head/foot}{\color{fg}\insertsectionhead}
+\setbeamertemplate{section in head/foot shaded}{\color{fg!50!bg}\insertsectionhead}
+\setbeamercolor{section in head/foot}{fg=white}
+
+%%% can add logo to section frame
+%% \newcommand{\secimage}{example-image-a}
+%%% can change in document with
+%% \renewcommand{\secimage}{example-image-b}
+%\AtBeginSection[]{
+%	\begin{frame}
+%		\vfill
+%		\centering
+%%       \includegraphics[width=4cm]{\secimage}
+%		\begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+%			\usebeamerfont{title}\insertsectionhead\par%
+%		\end{beamercolorbox}
+%		\vfill
+%	\end{frame}
+%}
+\end{comment}
+
+
+\title
+ [سنجش و بهبود آزمون‌پذیری]
+{
+سنجش و بهبود آزمون‌پذیری مصنوعات سیستم‌های نرم‌افزاری
+}
+
+\author[م. ذاکری]{مرتضی ذاکری}
+\subtitle{ ارائهٔ رساله دکتری}
+\institute[دانشگاه علم و صنعت ایران]{
+    دانشکدهٔ مهندسی کامپیوتر  /  دانشگاه علم و صنعت ایران \\
+    \href{http://ce.iust.ac.ir/}{\textit{http://ce.iust.ac.ir}}
+}
+\subject{مهندسی کامپیوتر}
+%\date{زمستان 1402}
+
+% \AtBeginDocument{
+\makeatletter
+\hypersetup{
+pdftitle={سنجش و بهبود آزمون‌پذیری نرم‌افزار},
+pdfauthor={مرتضی ذاکری},
+pdfsubject={ارائه رساله دکتری},
+pdfkeywords={Software artifacts, testability, covergaeability, software smell, automated refactoring, intelligent software engineering, testabilty-driven development.},
+colorlinks, linkcolor=blue, urlcolor=Blue4, citecolor=Green4,
+pdfdirection={R2L}
+}
+\makeatother
+% }
+
+\AtBeginSection[]{%
+\begin{frame}<beamer>[plain]
+%\frametitle{Outline}%
+\tableofcontents[current]
+ \end{frame}
+\addtocounter{framenumber}{-1}%
+}
+
+\titlegraphic{
+    \vspace{-0.05cm}
+    \begin{center}
+    \makebox[0.45\paperwidth]{
+        \includegraphics[height=1.4cm]{./img/logo-en2.png}
+        \hfill
+        \includegraphics[height=1.4cm]{./img/isut-relverse-lab-logo.png}
+}
+    \end{center}%
+\vspace{5 mm}
+}
+
+
+\begin{document}
+\DefaultMathsDigits
+
+\begin{withoutheadline}
+\frame{ \thispagestyle{empty} \maketitle }
+\end{withoutheadline}
+
+
+ \begin{frame}[t, allowframebreaks]
+ 	\frametitle{فهرست}
+     % \raggedright
+ 	\tableofcontents
+ \end{frame}
+
+\begin{comment}
+%%============multicolumns TOC ==============
+%\setbeamertemplate{section in toc}[circle]
+\begin{frame}{فهرست}%to allow TOC break
+    \begin{columns}[onlytextwidth]
+        \begin{column}{.1\textwidth}\end{column}
+        \begin{column}{.3\textwidth}
+            % \raggedleft
+            \tableofcontents[sections=1-3, subsubsectionstyle=hide/hide,hideothersubsections]
+        \end{column}
+        \begin{column}{.3\textwidth}
+            % \raggedleft
+            \tableofcontents[sections=4-6, subsubsectionstyle=hide/hide,hideothersubsections]%hideothersubsections
+        \end{column}
+        \begin{column}{.3\textwidth}
+            % \raggedleft
+            \tableofcontents[sections=7-9, subsubsectionstyle=hide/hide,hideothersubsections]%hideothersubsections
+        \end{column}
+    \end{columns}
+\end{frame}
+%============End multicolumns TOC ==============
+\end{comment}
+
+
+
+\section{مقدمه}
+
+\subsection{شرح مسئله}
+
+\begin{frame}
+\frametitle{مقدمه}
+%\setbeamercolor{alerted text}{fg=red}
+%\setbeamerfont{alerted text}{series=\bfseries}
+\setbeamercovered{transparent}
+% \raggedleft
+\begin{itemize}\RTList
+\item نمونه از یک لیست دولایه در کنار یک تصویر
+\begin{itemize}[<1>]\RTList
+ \item در این لیست موارد زیادی می‌تواند قرار بگیرد
+ \end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\section{کارهای مرتبط}
+
+
+
+\section{سنجش آزمون‌پذیری}
+
+
+\section{بهبود آزمون‌پذیری}
+
+
+
+\section{مراجع}
+\begin{frame}[allowframebreaks, noframenumbering]
+\bibliographystyle{unsrt-fa} % ieeetr-plain=unsrt %plainnat %unsrt-fa
+    %    \frametitle{منابع}
+    %    \nocite{*} % to add all reference in bib
+    % \printbibliography
+ {\scriptsize
+ \begin{latin}
+\bibliography{./references.bib}
+\end{latin}
+}
+\end{frame}
+
+%\appendix
+
+
+\end{document}
+
