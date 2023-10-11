@@ -35,9 +35,16 @@ The main package in MOST is the IUST-Thesis template. It supports different type
 Use the following command to create the PDF file for your thesis.
 
 1. `git clone https://github.com/m-zakeri/ZMOST.git`
-2. `xelatex.exe -synctex=1 -interaction=nonstopmode "maintext.tex"`
-3. `xindy -L persian-variant1 -C utf8 -I xindy -M "maintext".xdy -t "maintext".glg -o "maintext".gls "maintext".glo`
-4. `xelatex.exe -synctex=1 -interaction=nonstopmode "maintext".tex`
+
+2. `cd ZMOST/latex/phd_msc_bsc_thesis/IUST_CE_Thesis_Template_Latex_G3`
+
+3. `xelatex.exe -synctex=1 -interaction=nonstopmode "maintext.tex"`
+
+4. `xindy -L persian-variant1 -C utf8 -I xindy -M "maintext".xdy -t "maintext".glg -o "maintext".gls "maintext".glo`
+
+5. `xelatex.exe -synctex=1 -interaction=nonstopmode "maintext".tex`
+
+
 
 ##### Example thesis
 Some sample theses using the IUST Thesis template are as follows:
