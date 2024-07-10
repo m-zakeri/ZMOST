@@ -129,13 +129,15 @@
 	\addcontentsline{toc}{chapter}{فهرست کوته‌نوشت‌ها}
 	\setglossarystyle{myAbbrlist}
 	%\begin{LTR}
+        \twocolumn{}
 		\Oldprintglossary[type=acronym]	
 	%\end{LTR}
+	\onecolumn{}
 	\clearpage
 }%
 
 \newcommand{\printacronyms}{\printabbreviation}
-%%% در این جا محیط هر دو واژه نامه را باز تعریف کرده ایم، تا اولا مشکل قرار دادن صفحه اضافی را حل کنیم، ثانیا عنوان واژه نامه ها را با دستور addcontentlist وارد فهرست مطالب کرده ایم.
+%%% در این جا محیط هر دو واژه‌نامه را باز تعریف کرده‌ایم، تا اولا مشکل قرار دادن صفحه اضافی را حل کنیم، ثانیا عنوان واژه نامه‌ها را با دستور addcontentlist وارد فهرست مطالب کرده‌ایم.
 \let\Oldprintglossary\printglossary
 \renewcommand{\printglossary}{
 	\let\appendix\relax
